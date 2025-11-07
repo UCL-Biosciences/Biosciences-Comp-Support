@@ -92,9 +92,13 @@ def render_table(rows):
         return header + "\n| – | – | – | – | – |"
     lines = [header]
     for e in rows:
+        date_str = (
+            f"{e['start'].strftime(DATE_FMT_OUT)} – {e['end'].strftime(DATE_FMT_OUT)}"
+            if e.get("end") else e["date_str"]
+        )
         desc = e["summary"].strip().replace("\n", " ")
         link_md = f"[link]({e['link']})" if e["link"] else ""
-        lines.append(f"| {e['date_str']} | {e['title']} | {e['location']} | {desc} | {link_md} |")
+        lines.append(f"| {date_str} | {e['title']} | {e['location']} | {desc} | {link_md} |")
     return "\n".join(lines)
 
 def update_readme(upcoming, past_recent):
