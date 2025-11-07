@@ -1,0 +1,21 @@
+# Copy this file to events/YYYY-MM-DD-short-title.yaml and edit.
+id: 
+
+# Required
+title:
+start:
+timezone: 
+location:
+
+
+# Optional but recommended
+end:
+organiser:
+audience:
+link:
+registration_link:
+contact:
+
+# Short markdown description
+summary: |
+Short abstract or blurb in one or two sentences.
