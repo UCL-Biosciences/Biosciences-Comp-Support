@@ -63,15 +63,17 @@ def classify_events(events):
     cutoff = now - timedelta(days=ARCHIVE_AGE_DAYS)
     upcoming, past_recent, to_archive = [], [], []
     for e in events:
-        if e["start"] >= now:
+        event_end = e.get("end") or e["start"]
+        if event_end >= now:
             upcoming.append(e)
-        elif e["start"] >= cutoff:
+        elif event_end >= cutoff:
             past_recent.append(e)
         else:
             to_archive.append(e)
     upcoming.sort(key=lambda x: x["start"])
     past_recent.sort(key=lambda x: x["start"], reverse=True)
     return upcoming, past_recent, to_archive
+
 
 def move_to_archive(items):
     if not items:
