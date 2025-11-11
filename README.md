@@ -53,7 +53,7 @@ The table below lists upcoming and recent events. It is automatically generated 
 
 <!-- EVENTS:END -->
 
-## Contacts
+## More Info
 
 Point of Contact: [Dr. James D. Gilbert](https://profiles.ucl.ac.uk/62905-james-gilbert)
 
@@ -63,4 +63,7 @@ Email: james.d.gilbert@ucl.ac.uk
 
 More Biosciences information: For information about Computational Biology in the Division, visit the [Computational Biology webpage](https://www.ucl.ac.uk/life-sciences/biosciences/computational-biology).
 
-Computational Research at UCL: [ARC](https://www.ucl.ac.uk/advanced-research-computing/) is UCL's research, innovation and service centre for the tools, practices and systems that enable computational science and digital scholarship. 
+Computational Research at UCL: [ARC](https://www.ucl.ac.uk/advanced-research-computing/) is UCL's research, innovation and service centre for the tools, practices and systems that enable computational science and digital scholarship.
+
+Bioinformatics: There are a lot of great resources across UCL and beyond. We like:
+- The Bill Lyon Informatics Centre's [pipeline repository](https://github.com/UCL-BLIC) and [training material](https://ucl-blic.github.io/LearnBioinformatics/).
