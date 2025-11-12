@@ -11,8 +11,8 @@
 - `start` and `end` use 24-hour time, e.g. `2025-11-15 12:30`.
 - `timezone` must be an IANA zone like `Europe/London`.
 - `summary` supports basic Markdown.
-- YAML keys cannot contain parentheses unless in double quotes, e.g. "Your Info (More Info)"
-- summary must be a multiline block if it spans more than one line. Either add quotes to the whole summary, or use a pipe and note indent:
+- YAML keys cannot contain characters that can be special values (e.g. # ! : and many more ) unless in double quotes, e.g. "Your Info (More Info)". If in doubt, put in quotes
+- summary must be a multiline block if it spans more than one line. Either add quotes to the whole summary, or use a pipe and note 2-space indent:
 ```
 summary: |
   Your event info
