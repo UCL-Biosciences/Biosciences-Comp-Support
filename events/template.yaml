@@ -1,4 +1,4 @@
-# Copy this file to events/YYYY-MM-DD-short-title.yaml and edit.
+# Copy the contents of this file to a new file called events/YYYY-MM-DD-short-title.yaml and edit.
 id: 
 
 # Required
@@ -16,6 +16,6 @@ link:
 registration_link:
 contact:
 
-# Short markdown description
+# Short markdown description. Use lines below | and make sure all lines start with 2 spaces
 summary: |
-Short abstract or blurb in one or two sentences.
+  Short abstract or blurb in one or two sentences.
