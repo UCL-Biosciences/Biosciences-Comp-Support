@@ -41,6 +41,8 @@ The Biosciences Data Science team supports and/or maintains:
 - We can offer support for **analysing RNA Seq data** with [**nextflow/nf-core**](https://nf-co.re/rnaseq/). nf-core/rnaseq is a bioinformatics pipeline that can be used to analyse RNA sequencing data obtained from organisms with a reference genome and annotation. It takes a samplesheet with FASTQ files or pre-aligned BAM files as input, performs quality control (QC), trimming and (pseudo-)alignment, and produces a gene expression matrix and extensive QC report.
 - **General support **for using** ARC HPCs (Myriad and Kathleen)**, including setting up accounts, accessing via ssh, transferring files and submitting jobs.
 
+UCL has a Slack workspace dedicated to discussing computational questions. It's a great place to ask for advice on all thing computational! Let us know if you want to join by [opening an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue) in this repo.
+
 ## Events
 
 The table below lists upcoming and recent events. It is automatically generated from individual event files in the `events/` folder. To add an event follow the instructions in `events/add-an-event.md`. A GitHub Action will update this table automatically.
