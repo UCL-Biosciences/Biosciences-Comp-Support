@@ -35,11 +35,11 @@ Contact us early in your project to discuss requirements or explore automation a
 
 ### Available Resources
 The Biosciences Data Science team supports and/or maintains:
-- [Auto-Prot](https://github.com/UCL-Biosciences/Auto-Prot)- a pipeline for automating the analysis of mass spec proteomic data.
-- Computational Training for Biologists at UCL. Material from the initial series is available [here](https://github.com/UCL-Biosciences/2025_Biosciences_Computational_Training_Material).
-- Image analysis. We are working with the [Biosciences Microscopy facility](https://www.uclccmd.co.uk/) to support repeatable and reproducible image analysis using python. Get in touch if you would like support with that.
-- We can offer support for analysing RNA Seq data with [nextflow/nf-core](https://nf-co.re/rnaseq/). nf-core/rnaseq is a bioinformatics pipeline that can be used to analyse RNA sequencing data obtained from organisms with a reference genome and annotation. It takes a samplesheet with FASTQ files or pre-aligned BAM files as input, performs quality control (QC), trimming and (pseudo-)alignment, and produces a gene expression matrix and extensive QC report.
-- General support for using ARC HPCs (Myriad and Kathleen), including setting up accounts, accessing via ssh, transferring files and submitting jobs.
+- [Auto-Prot](https://github.com/UCL-Biosciences/Auto-Prot)- a pipeline for **automating the analysis** of mass spec **proteomic data**.
+- **Computational Training for Biologists at UCL**. We hope to run this annually. Material from the initial series is available [here](https://github.com/UCL-Biosciences/2025_Biosciences_Computational_Training_Material).
+- **Image analysis.** We are working with the [Biosciences Microscopy facility](https://www.uclccmd.co.uk/) to support repeatable and reproducible image analysis using python. Get in touch if you would like support with that.
+- We can offer support for **analysing RNA Seq data** with [**nextflow/nf-core**](https://nf-co.re/rnaseq/). nf-core/rnaseq is a bioinformatics pipeline that can be used to analyse RNA sequencing data obtained from organisms with a reference genome and annotation. It takes a samplesheet with FASTQ files or pre-aligned BAM files as input, performs quality control (QC), trimming and (pseudo-)alignment, and produces a gene expression matrix and extensive QC report.
+- **General support **for using** ARC HPCs (Myriad and Kathleen)**, including setting up accounts, accessing via ssh, transferring files and submitting jobs.
 
 ## Events
 
