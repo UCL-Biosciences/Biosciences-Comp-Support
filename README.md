@@ -21,7 +21,7 @@ For general requests, questions, or ideas (e.g. training needs, new tools, or pi
 All contributions should follow the relevant repository’s README and contribution guidelines.
 
 ## Computational Support
-The Data Science team helps researchers across UCL Biosciences to plan, run, and maintain computational analyses. We focus on building sustainable and reproducible workflows, improving data management, and supporting skills development.
+The Data Science team helps researchers across UCL Biosciences to plan, run, and maintain computational analyses. We focus on building sustainable and reproducible workflows, improving data management, and supporting skills development. Book a meeting with James Gilbert, Biosciences' Senior Research Data Scientist, [here](https://outlook.office.com/bookwithme/user/d23d2d9663fa4276b318d8ae8f40ccbb@ucl.ac.uk/meetingtype/GP1vEk6SdU6fTvgYLBKK8Q2?anonymous&ismsaljsauthenabled&ep=mlink).
 
 We can assist with:
 - **Analysis pipelines**: guidance on standardised workflows for proteomics, sequencing, imaging, and other data types.
