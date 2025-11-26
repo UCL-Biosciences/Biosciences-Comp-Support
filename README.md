@@ -65,5 +65,9 @@ More Biosciences information: For information about Computational Biology in the
 
 Computational Research at UCL: [ARC](https://www.ucl.ac.uk/advanced-research-computing/) is UCL's research, innovation and service centre for the tools, practices and systems that enable computational science and digital scholarship.
 
-Bioinformatics: There are a lot of great resources across UCL and beyond. We like:
+Bioinformatics: There are a lot of great resources across UCL and beyond:
 - The Bill Lyon Informatics Centre's [pipeline repository](https://github.com/UCL-BLIC) and [training material](https://ucl-blic.github.io/LearnBioinformatics/).
+- [UCL Genomics](https://www.ucl.ac.uk/population-health-sciences/child-health/research/core-scientific-facilities-and-centres/ucl-genomics) for sequencing and bioinformatics support.
+- [The Proteomics Research Translational Technology Platform](https://www.ucl.ac.uk/population-health-sciences/child-health/research/core-scientific-facilities-and-centres/ucl-genomics) for all things relating to proteomics analysis.
+- [UCL's Imaging STP](https://www.ucl.ac.uk/science-technology-platforms/imaging) covers a huge range of imaging-related instruments, expertise, and training.
+
