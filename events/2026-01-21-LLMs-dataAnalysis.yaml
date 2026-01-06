@@ -1,0 +1,21 @@
+# Copy the contents of this file to a new file called events/YYYY-MM-DD-short-title.yaml and edit.
+id: 
+
+# Required
+title: "AI-powered Life Science Data Analysis Workshop"
+start: 2026-01-21
+timezone: Europe/London
+location: online
+
+
+# Optional but recommended
+end: 2026-01-21
+organiser: Metacell
+audience: Life scientists
+link: https://events.zoom.us/ev/Ahyi_TfHIfPJIDoZIkLCMUijLOYYN7EtMkYwKvDTLJqCuxMJgtlk~AvdQa-5vIjsMxKeY7rq5LTflZiU5eWjz20SU4xjNX94W9TzSxVzXvBr0e5DZHGZl3onIRHE0GM7QA7SHecgk8GMgGA
+registration_link:
+contact:
+
+# Short markdown description. Use lines below | and make sure all lines start with 2 spaces
+summary: |
+  Short abstract or blurb in one or two sentences.
