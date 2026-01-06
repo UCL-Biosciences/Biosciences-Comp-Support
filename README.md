@@ -53,12 +53,13 @@ The table below lists upcoming and recent events. It is automatically generated 
 
 | Date | Title | Location | Description | Link |
 |------|-------|----------|-------------|------|
-| 2025-12-08 | STEP-UP Software Carpentry workshops: Shell, Git, and Python for Research | Online | "These Software Carpentry workshops are designed for researchers with some experience working with data, software, or computing infrastructure who want to strengthen their command-line, version control, and Python programming skills for more efficient and reproducible research. What you’ll gain:   Proficiency in using the Unix shell for automation and file management   Practical experience with Git for version control and collaborative development   A solid foundation in Python for data analysis and scripting workflows" | [link](https://forms.office.com/e/Z37ZtE34wm) |
+| – | – | – | – | – |
 
 ### Recent Past (last 90 days)
 
 | Date | Title | Location | Description | Link |
 |------|-------|----------|-------------|------|
+| 2025-12-08 | STEP-UP Software Carpentry workshops: Shell, Git, and Python for Research | Online | "These Software Carpentry workshops are designed for researchers with some experience working with data, software, or computing infrastructure who want to strengthen their command-line, version control, and Python programming skills for more efficient and reproducible research. What you’ll gain:   Proficiency in using the Unix shell for automation and file management   Practical experience with Git for version control and collaborative development   A solid foundation in Python for data analysis and scripting workflows" | [link](https://forms.office.com/e/Z37ZtE34wm) |
 | 2025-11-05 | Biosciences Computational Training  (Capacity Reached) | UCL Bloomsbury Campus | Computational training delivered by Biosciences, ARC, Learn To Discover and Microsoft. Covering fundamental skills for comp bio research. | [link](https://ucl-biosciences.github.io/2025-11-03-Biosciences/) |
 
 <!-- EVENTS:END -->
