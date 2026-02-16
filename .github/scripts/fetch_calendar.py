@@ -16,7 +16,10 @@ data = {
     "scope": "https://graph.microsoft.com/.default",
     "grant_type": "client_credentials",
 }
-token = requests.post(token_url, data=data).json()["access_token"]
+token_response = requests.post(token_url, data=data).json()
+print(token_response)  # DEBUG
+
+token = token_response["access_token"]
 headers = {"Authorization": f"Bearer {token}"}
 
 # 2. Get events for next 30 days
