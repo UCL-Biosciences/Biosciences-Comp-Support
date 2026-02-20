@@ -43,6 +43,13 @@ The Biosciences Data Science team supports and/or maintains:
 
 UCL has a Slack workspace dedicated to discussing computational questions. It's a great place to ask for advice on all thing computational! Let us know if you want to join by [opening an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue) in this repo.
 
+## Drop-ins
+Come along to the Darwin Common Room for a drop-in with Biosciences Data Scientist James Gilbert. We can discuss any questions you have about your data, code, or analyses. No appointment needed! 
+
+<!-- NEXT_EVENTS_START -->
+*Events will be automatically inserted here.*
+<!-- NEXT_EVENTS_END -->
+
 ## Events
 The table below lists upcoming and recent events. It is automatically generated from individual event files in the `events/` folder. To add an event follow the instructions in `events/add-an-event.md`. A GitHub Action will update this table automatically.
 
