@@ -54,8 +54,8 @@ def main():
         df = df.iloc[1:].reset_index(drop=True)
     
     # Also strip whitespace from all cells
-    df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
-    
+    df = df.apply(lambda col: col.map(lambda x: x.strip() if isinstance(x, str) else x))
+
     print("=== DEBUG: Columns found in events table ===")
     print(df.columns.tolist())
     
