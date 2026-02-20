@@ -1,4 +1,5 @@
 ﻿## Upcoming Drop‑in Sessions
+Come along to the Darwin Common Room for a drop-in with Biosciences Data Scientist James Gilbert. We can discuss any questions you have about your data, code, or analyses. No appointment needed!
 
 | Date | Time | Location | Title |
 |------|------|----------|--------|
