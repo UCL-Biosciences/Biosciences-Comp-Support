@@ -43,6 +43,14 @@ def main():
     md_text = EVENTS_FILE.read_text()
     df = extract_events_table(md_text)
 
+    
+    print("=== DEBUG: Columns found in events table ===")
+    print(df.columns.tolist())
+    
+    print("=== DEBUG: First few rows ===")
+    print(df.head().to_string())
+
+
     # Parse dates
     df["parsed_date"] = df["Date"].apply(
         lambda d: datetime.strptime(d.strip(), "%a, %d %b %Y")
