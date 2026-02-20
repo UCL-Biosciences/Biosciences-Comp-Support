@@ -42,7 +42,19 @@ def main():
     # Load events
     md_text = EVENTS_FILE.read_text()
     df = extract_events_table(md_text)
-
+    
+    # Drop empty columns created by leading/trailing pipes
+    df = df.loc[:, ~df.columns.str.contains("^Unnamed")]
+    
+    # Normalize header names by stripping whitespace
+    df.columns = df.columns.str.strip()
+    
+    # Drop the markdown alignment/separator row (------ etc.)
+    if (df.iloc[0].astype(str).str.fullmatch(r"-+").all()):
+        df = df.iloc[1:].reset_index(drop=True)
+    
+    # Also strip whitespace from all cells
+    df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
     
     print("=== DEBUG: Columns found in events table ===")
     print(df.columns.tolist())
