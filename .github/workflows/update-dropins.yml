@@ -1,4 +1,4 @@
-name: Update Events on Org Page
+name: Update next three drop-ins
 
 on:
   schedule:
