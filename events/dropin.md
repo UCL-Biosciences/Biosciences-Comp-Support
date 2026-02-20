@@ -3,7 +3,9 @@ Come along to the Darwin Common Room for a drop-in with Biosciences Data Scienti
 
 | Date | Time | Location | Title |
 |------|------|----------|--------|
-| Tue, 17 Mar 2026 | 10:00–11:00 | Darwin Common Room | Data Science Drop-Ins |
-| Tue, 31 Mar 2026 | 10:00–11:00 | Darwin Common Room | Data Science Drop-Ins |
-| Tue, 14 Apr 2026 | 10:00–11:00 | Darwin Common Room | Data Science Drop-Ins |
+| Tue, 17 Mar 2026 | 10:00-11:00 | Darwin Common Room | Data Science Drop-Ins |
+| Tue, 31 Mar 2026 | 10:00-11:00 | Darwin Common Room | Data Science Drop-Ins |
+| Tue, 14 Apr 2026 | 10:00-11:00 | Darwin Common Room | Data Science Drop-Ins |
+| Tue, 28 Apr 2026 | 10:00-11:00 | Darwin Common Room | Data Science Drop-Ins |
+| Tue, 12 May 2026 | 10:00-11:00 | Darwin Common Room | Data Science Drop-Ins |
 
