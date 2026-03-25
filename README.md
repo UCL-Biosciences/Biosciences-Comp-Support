@@ -1,5 +1,5 @@
 # UCL Biosciences Computational Research
-Welcome to UCL Biosciences' github, where we store Divsion-related code, training material and other information. Our Data Science team and [computational experts](https://www.ucl.ac.uk/life-sciences/computational-biology-0) are promoting reproducible, FAIR and open science across the Division.
+Welcome to UCL Biosciences' github, where we store Division-related code, training material and other information. Our Data Science team and [computational experts](https://www.ucl.ac.uk/life-sciences/computational-biology-0) are promoting reproducible, FAIR and open science across the Division.
 
 [This repository](https://github.com/UCL-Biosciences/Biosciences-Comp-Support) provides information about computational research support activities in UCL's Division of Biosciences. It is intended as a reference point for internal collaborators and external visitors who want to understand our scope, events, and how to engage with us.
 
@@ -38,10 +38,10 @@ The Biosciences Data Science team supports and/or maintains:
 - [Auto-Prot](https://github.com/UCL-Biosciences/Auto-Prot)- a pipeline for **automating the analysis** of mass spec **proteomic data**.
 - **Computational Training for Biologists at UCL**. We hope to run this annually. Material from the initial series is available [here](https://github.com/UCL-Biosciences/2025_Biosciences_Computational_Training_Material).
 - **Image analysis.** We are working with the [Biosciences Microscopy facility](https://www.uclccmd.co.uk/) to support repeatable and reproducible image analysis using python. From Tuesday March 10th 2026, we will have **fortnightly drop-ins** where all image analysis chat is welcome. Bring data, questions or general discussion to the Starling Room, 10:30 - 11:30! Contact for more details: biosciences.imaging@ucl.ac.uk. 
-- We can offer support for **analysing RNA Seq data** with [**nextflow/nf-core**](https://nf-co.re/rnaseq/). nf-core/rnaseq is a bioinformatics pipeline that can be used to analyse RNA sequencing data obtained from organisms with a reference genome and annotation. It takes a samplesheet with FASTQ files or pre-aligned BAM files as input, performs quality control (QC), trimming and (pseudo-)alignment, and produces a gene expression matrix and extensive QC report.
+- We can offer support for **analysing RNA Seq data** with [**nextflow/nf-core**](https://nf-co.re/rnaseq/). nf-core/rnaseq is a pipeline for analysing RNA sequencing data. It is automated and reproducible, taking samplesheet with FASTQ files as input, and produces a gene expression matrix and extensive QC report.
 - **General support **for using** ARC HPCs (Myriad and Kathleen)**, including setting up accounts, accessing via ssh, transferring files and submitting jobs.
 
-UCL has a Slack workspace dedicated to discussing computational questions. It's a great place to ask for advice on all thing computational! Let us know if you want to join by [opening an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue) in this repo.
+UCL has a Slack workspace dedicated to discussing computational questions. It's a great place to ask for advice on all things computational! Let us know if you want to join by [opening an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue) in this repo.
 
 ## Drop-ins
 Come along to the Darwin Common Room for a drop-in with Biosciences Data Scientist James Gilbert. We can discuss any questions you have about your data, code, or analyses. No appointment needed! 
@@ -86,6 +86,6 @@ Computational Research at UCL: [ARC](https://www.ucl.ac.uk/advanced-research-com
 Bioinformatics: There are a lot of great resources across UCL and beyond:
 - The Bill Lyon Informatics Centre's [pipeline repository](https://github.com/UCL-BLIC) and [training material](https://ucl-blic.github.io/LearnBioinformatics/).
 - [UCL Genomics](https://www.ucl.ac.uk/population-health-sciences/child-health/research/core-scientific-facilities-and-centres/ucl-genomics) for sequencing and bioinformatics support.
-- [The Proteomics Research Translational Technology Platform](https://www.ucl.ac.uk/population-health-sciences/child-health/research/core-scientific-facilities-and-centres/ucl-genomics) for all things relating to proteomics analysis.
+- [The Proteomics Research Translational Technology Platform](https://www.ucl.ac.uk/medical-sciences/divisions/cancer/translational-technology-platforms/proteomics-research-translational-technology-platform) for all things relating to proteomics analysis.
 - [UCL's Imaging STP](https://www.ucl.ac.uk/science-technology-platforms/imaging) covers a huge range of imaging-related instruments, expertise, and training.
 
