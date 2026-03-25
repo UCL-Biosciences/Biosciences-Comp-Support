@@ -59,7 +59,7 @@ All options below share **live files** — recipients always see the current sta
 |---|---|---|---|---|---|
 | **RDSS — direct access** | Ongoing collaboration | TB scale | Yes (PI grants) | To manage via storageadmin; not for recipient | Yes |
 | **RDSS — shared link** | One-off access to specific files | TB scale | Yes | No | Yes |
-| **OneDrive link** | Small files, Office docs, quick shares | ~10 GB practical | Yes | No | Yes |
+| **OneDrive link** | Small files, Office docs, quick shares | ??? | Yes | No | Yes |
 | **SharePoint** | Team/departmental documents | Varies | Yes | No | Yes |
 | **Globus** | Large/bulk transfers, HPC-to-HPC | Effectively unlimited | Yes | No | Yes |
 | **RDR** | Published / archived datasets | 50 GB default | Public (DOI) | No | **No — frozen at deposit** |
@@ -102,87 +102,11 @@ External collaborators need either a UCL guest account or an institutional accou
 - Plan ahead: don't leave this until a collaborator is already waiting for data
 - For Globus, external collaborators use their own institutional credentials — no UCL account needed (This needs verifying)
 
----
-
-## Service details
-
-### RDSS — sharing with external collaborators
-**Use when:** you have an active collaboration with someone outside UCL who needs ongoing access to project data.
-
-**Key facts:**
-- External access is set up by the PI at [storageadmin.rd.ucl.ac.uk](https://storageadmin.rd.ucl.ac.uk) — **requires UCL network or VPN**
-- Per-folder permissions can be scoped to read or read/write
-- Projects expire after 5 years; collaborators lose access at that point without a renewal
-
-**Gotchas:**
-- 200,000-file-per-TB limit applies regardless of who is accessing — plan for genomics/imaging data
-- storageadmin portal is not accessible without UCL network or VPN
-
----
-
-### OneDrive
-**Use when:** sharing lightweight documents, analysis outputs, or Office files quickly with internal or external colleagues.
-
-**Key facts:**
-- 1 TB+ via UCL's Microsoft 365 subscription; accessible from anywhere without VPN
-- Share links can expire and require sign-in — use these controls for anything non-trivial
-
-**Gotchas:**
-- Not appropriate as primary research data storage — use RDSS for that
-- OneDrive sync on large folders (many files, large datasets) is unreliable — use Globus or rsync instead
-
----
-
-### Globus
-**Use when:** transferring large datasets (>10 GB), moving data between HPC systems, or running a reliable ongoing data pipeline with an external institution.
-
-**Key facts:**
-- Managed, resumable, high-speed transfers — survives dropped connections and can be scheduled overnight
-- UCL has an institutional Globus endpoint; contact [rc-support@ucl.ac.uk](mailto:rc-support@ucl.ac.uk) to get set up
-- Myriad (HPC) can be configured as an endpoint — transfer data directly from scratch without pulling to a local machine first
-- Collaborators at most research universities already have institutional endpoints; if not, they can use Globus Personal Connect on their own machine
-- **No VPN required** — transfers run independently once initiated
-- Transfers are authenticated and logged
-
-**Gotchas:**
-- Initial setup takes effort — not the right tool for a quick one-off small transfer
-- Both sender and receiver need an endpoint; confirm with your collaborator before committing
-- Myriad scratch is not backed up — don't use it as a long-term staging area
-
----
-
-### RDR — UCL Research Data Repository
-**Use when:** a project is ending, a paper is being submitted, or a funder requires public archiving.
-
-**Key facts:**
-- Data receives a DOI and is publicly accessible — treat it as a permanent publication
-- 50 GB per-person limit by default; contact [researchdata-support@ucl.ac.uk](mailto:researchdata-support@ucl.ac.uk) to increase
-- Discipline-specific repositories (GEO, ENA, Zenodo, etc.) are preferable where they exist
-- Embargo periods available if data must be withheld until publication
-
-**Gotchas:**
-- Once public, data cannot easily be unpublished — confirm ethics/consent approval before uploading
-- Not appropriate for sharing data with active collaborators — use RDSS for that
-
----
-
-### DSH / TRE
-**Use when:** data contains sensitive or identifiable information — patient records, linked administrative data, anything with ethical controls on access.
-
-Contact ISD or ARC before starting. Setup takes weeks — factor this into project timelines from the outset. Do not store or share sensitive data via any other route, even temporarily.
-
----
-
 ## Practical transfer considerations
 
 ### File size
 
-| Size | Recommended method |
-|---|---|
-| < 1 GB | OneDrive link, RDSS link |
-| 1–10 GB | RDSS link or OneDrive (test first) |
-| 10 GB – 1 TB | Globus or RDSS direct access |
-| > 1 TB | Globus; discuss staging with ARC if moving to/from HPC |
+File size affects which method is practical rather than which is permitted. For small files, email attachments or OneDrive links are fine. As files get larger — multi-GB datasets, image stacks, sequencing outputs — browser-based uploads become unreliable and slow, and a dropped connection means starting again. At this scale RDSS links are more robust, and for anything in the tens of gigabytes or above, Globus is strongly preferable: it handles interruptions, can be left to run overnight, and verifies integrity automatically. There is no hard upper limit on Globus transfers, but very large transfers (hundreds of GB or more) are worth discussing with ARC (researchdata-support@ucl.ac.uk) beforehand, particularly if data is moving to or from Myriad scratch where purge policies apply.
 
 ### Upload speed and reliability
 
@@ -195,7 +119,7 @@ Network connection makes a large difference for anything over a few GB:
 - As a rough guide: 100 GB at 50 Mbps upload takes around 4–5 hours; on a 1 Gbps campus connection, around 15 minutes
 
 ### VPN
-
+(Need to verify this)
 UCL's GlobalProtect VPN is required to access some systems from off-campus:
 
 - **Required:** storageadmin portal (to manage RDSS projects and permissions), S Drive, some legacy UCL services
@@ -216,30 +140,18 @@ See the HPC guide for Myriad scratch policies and mounting RDSS on the cluster.
 ### Format considerations
 
 - **Many small files** (Nanopore fast5/pod5, image stacks) transfer slowly and hit the RDSS file count limit (200,000 files/TB) faster than the storage limit — consider archiving to `tar` first, or use consolidated formats like HDF5/zarr/OME-Zarr
-- **Checksums** — verify integrity for large transfers with `md5sum` or `sha256sum` at both ends; Globus does this automatically, manual transfers do not
+- **Checksums** — verify integrity for large transfers with `md5sum` or `sha256sum` at both ends; Globus does this automatically, manual transfers do not. Short guide [here](https://github.com/jdgilbert245/Comp-Guides-and-QuickStarts/blob/main/hpc/quickstart-md5check.md).
 - **Compression** — often not worthwhile for already-compressed formats (FASTQ.gz, CRAM, PNG)
 
 ---
 
-## Funder requirements
-
-Most funders require a **Data Management Plan (DMP)** at application stage and open data deposition on publication. Sharing arrangements should be described in your DMP.
-
-- **UKRI** (BBSRC, MRC, NERC, etc.): data available with minimal restrictions, usually within 12 months of publication. Zenodo and discipline-specific repos acceptable.
-- **Wellcome**: specific guidance for genomics, imaging, and clinical data — check the Wellcome Data, Software & Materials policy.
-- **Horizon Europe**: open data by default; DMPs required.
-
-UCL's [Research Data Support team](mailto:researchdata-support@ucl.ac.uk) can advise on DMPs and identify the right repository. The [DMP Online tool](https://dmponline.dcc.ac.uk/) has funder-specific templates.
-
----
 
 ## Further help
 
 | Need | Contact |
 |---|---|
 | RDSS external access, guest accounts, project setup | [researchdata-support@ucl.ac.uk](mailto:researchdata-support@ucl.ac.uk) |
-| Globus endpoint setup, HPC transfers | [rc-support@ucl.ac.uk](mailto:rc-support@ucl.ac.uk) |
+| Globus endpoint setup, HPC transfers | [researchdata-support@ucl.ac.uk](mailto:researchdata-support@ucl.ac.uk) |
 | DSH / TRE access | ISD / ARC |
-| DMP advice, RDR deposits | [researchdata-support@ucl.ac.uk](mailto:researchdata-support@ucl.ac.uk) |
 | VPN setup | [ISD VPN guidance](https://www.ucl.ac.uk/isd/services/get-connected/ucl-virtual-private-network-vpn) |
 | HPC storage and scratch policies | See HPC guide *(coming soon)* |
