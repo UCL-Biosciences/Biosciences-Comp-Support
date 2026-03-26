@@ -1,47 +1,41 @@
 # UCL Biosciences Computational Research
 Welcome to UCL Biosciences' github, where we store Division-related code, training material and other information. Our Data Science team and [computational experts](https://www.ucl.ac.uk/life-sciences/computational-biology-0) are promoting reproducible, FAIR and open science across the Division.
 
-[This repository](https://github.com/UCL-Biosciences/Biosciences-Comp-Support) provides information about computational research support activities in UCL's Division of Biosciences. It is intended as a reference point for internal collaborators and external visitors who want to understand our scope, events, and how to engage with us.
+[This repository](https://github.com/UCL-Biosciences/Biosciences-Comp-Support) provides information about computational research support activities in UCL's Division of Biosciences. It is intended as a reference point for internal collaborators and external visitors who want to understand our scope, events, and how to engage with us. Read on for info about:
 
-## What is in the Biosciences github?
-This GitHub organisation hosts shared computational resources for the division. It brings together:
-- **Code for common pipelines** – maintained repositories implementing standard workflows (e.g. proteomics, methylation, image analysis).
-- **Training materials** – reproducible tutorials, HPC and data analysis guides, and examples for core bioinformatics methods.
-- **Shared utilities** – tools, templates, and environment files for analysis and reporting.
-- **Reference documentation** – best practices, coding standards, and contribution guidelines.
-- **Key project repositories** – links to active collaborations and their codebases.
+- data management, sharing and analysis using UCL infrastructure
+- support and training for computational research
+- the resources hosted by UCL Biosciences' Data Science team
+markdown# UCL Biosciences Computational Research
 
-We aim to make research computing more **efficient, collaborative, and reproducible** by reducing duplication, promoting shared development, and spreading good practice across teams.
+Welcome to UCL Biosciences on GitHub. We host Division-wide code, training materials, and documentation. Our Data Science team and [computational experts](https://www.ucl.ac.uk/life-sciences/computational-biology-0) support reproducible, FAIR, and open science across the Division.
 
-## How do I contribute?
-Contributions are welcome from all Biosciences staff and collaborators. Repositories within the organisation follow standard GitHub workflows — create a fork or branch, submit a pull request, and use issues for discussion. We can also discuss the transfer of existing repositories here if they are maintained collaboratively or support shared analysis.
+[This repository](https://github.com/UCL-Biosciences/Biosciences-Comp-Support) is the reference point for computational research support in UCL Biosciences — covering infrastructure, training, and how to engage with us.
 
-For general requests, questions, or ideas (e.g. training needs, new tools, or pipeline improvements), please open an [issue in the computational support repository](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/issues). This provides a single point for tracking and coordinating work across projects.
+## What's here
 
-All contributions should follow the relevant repository’s README and contribution guidelines.
+- Pipelines and workflows for common analyses (proteomics, sequencing, imaging)
+- Training materials and guides to using UCL resources
+- Shared utilities, templates, and environment files
+- Best practices, coding standards, and contribution guidelines
 
 ## Computational Support
-The Data Science team helps researchers across UCL Biosciences to plan, run, and maintain computational analyses. We focus on building sustainable and reproducible workflows, improving data management, and supporting skills development. Book a meeting with James Gilbert, Biosciences' Senior Research Data Scientist, [here](https://outlook.office.com/bookwithme/user/d23d2d9663fa4276b318d8ae8f40ccbb@ucl.ac.uk/meetingtype/GP1vEk6SdU6fTvgYLBKK8Q2?anonymous&ismsaljsauthenabled&ep=mlink).
 
-We can assist with:
-- **Analysis pipelines**: guidance on standardised workflows for proteomics, sequencing, imaging, and other data types.
-- **HPC use**: advice on running jobs efficiently, using job arrays, and resource selection.
-- **Code and reproducibility**: structuring analysis code, version control, and environment management.
-- **Training and mentoring**: workshops and 1:1 sessions on coding, reproducibility and data science best practice.
-- **Collaboration setup**: where capacity allows, we can collaborate directly on grant applications, data analysis and writing up results in papers.
-- **Networking**: we want to do more to connect people across the Division and across UCL, especially UCL's Centre for Advanced Research Computing. If you would like to meet researchers with similar interests and/or specific computational expertise, please get in touch to see if we can help. 
+The Data Science team helps researchers plan, run, and maintain computational analyses, with a focus on reproducibility, data management, and skills development. [Book a meeting with James Gilbert](https://outlook.office.com/bookwithme/user/d23d2d9663fa4276b318d8ae8f40ccbb@ucl.ac.uk/meetingtype/GP1vEk6SdU6fTvgYLBKK8Q2?anonymous&ismsaljsauthenabled&ep=mlink), Biosciences' Senior Research Data Scientist.
 
-Contact us early in your project to discuss requirements or explore automation and reproducibility improvements.
+We can help with analysis pipelines, HPC use, code and reproducibility, training, grant collaboration, and connecting you with expertise across UCL and [ARC](https://www.ucl.ac.uk/arc). Get in touch early in your project.
 
-### Available Resources
-The Biosciences Data Science team supports and/or maintains:
-- [Auto-Prot](https://github.com/UCL-Biosciences/Auto-Prot)- a pipeline for **automating the analysis** of mass spec **proteomic data**.
-- **Computational Training for Biologists at UCL**. We hope to run this annually. Material from the initial series is available [here](https://github.com/UCL-Biosciences/2025_Biosciences_Computational_Training_Material).
-- **Image analysis.** We are working with the [Biosciences Microscopy facility](https://www.uclccmd.co.uk/) to support repeatable and reproducible image analysis using python. From Tuesday March 10th 2026, we will have **fortnightly drop-ins** where all image analysis chat is welcome. Bring data, questions or general discussion to the Starling Room, 10:30 - 11:30! Contact for more details: biosciences.imaging@ucl.ac.uk. 
-- We can offer support for **analysing RNA Seq data** with [**nextflow/nf-core**](https://nf-co.re/rnaseq/). nf-core/rnaseq is a pipeline for analysing RNA sequencing data. It is automated and reproducible, taking samplesheet with FASTQ files as input, and produces a gene expression matrix and extensive QC report.
-- **General support **for using** ARC HPCs (Myriad and Kathleen)**, including setting up accounts, accessing via ssh, transferring files and submitting jobs.
+## Resources
 
-UCL has a Slack workspace dedicated to discussing computational questions. It's a great place to ask for advice on all things computational! Let us know if you want to join by [opening an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue) in this repo.
+| Resource | Description |
+|---|---|
+| [Auto-Prot](https://github.com/UCL-Biosciences/Auto-Prot) | Pipeline for automated mass spec proteomics analysis |
+| [Computational Training 2025](https://github.com/UCL-Biosciences/2025_Biosciences_Computational_Training_Material) | Materials from our annual training series for biologists |
+| Image Analysis | [Fortnightly drop-ins](https://www.uclccmd.co.uk/drop-in) (Starling Room, 10:30–11:30) supporting reproducible image analysis with Python. Contact: biosciences.imaging@ucl.ac.uk |
+| RNA-seq | Support for [nf-core/rnaseq](https://nf-co.re/rnaseq/) — automated, reproducible RNA-seq from FASTQ to expression matrix |
+| [UCL Comp Guides](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/tree/main/UCL_comp_guides) | Guides for navigating UCL's computational resources including data storage, sharing and using HPCs |
+
+UCL has a Slack workspace for computational questions — [open an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue).
 
 ## Drop-ins
 Come along to the Darwin Common Room for a drop-in with Biosciences Data Scientist James Gilbert. We can discuss any questions you have about your data, code, or analyses. No appointment needed! 
@@ -51,6 +45,8 @@ Come along to the Darwin Common Room for a drop-in with Biosciences Data Scienti
 - **Tue, 12 May 2026** — 10:00-11:00 — Darwin Common Room — Data Science Drop-Ins
 - **Tue, 26 May 2026** — 10:00-11:00 — Darwin Common Room — Data Science Drop-Ins
 <!-- NEXT_EVENTS_END -->
+
+We are also running bioimage analysis dropins every other Tuesday! More info on computational support and training is available [here](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/blob/main/UCL_comp_guides/training_and_support_comp_at_UCL.md).
 
 ## Events
 The table below lists upcoming and recent events. It is automatically generated from individual event files in the `events/` folder. To add an event follow the instructions in `events/add-an-event.md`. A GitHub Action will update this table automatically.
@@ -70,6 +66,14 @@ The table below lists upcoming and recent events. It is automatically generated 
 | 2026-01-21 | AI-powered Life Science Data Analysis Workshop | online | A free, practical session on using ChatGPT and Claude Code to speed up neuroscience and life science data analysis. Seats are limited, register today! | [link](https://events.zoom.us/ev/Ahyi_TfHIfPJIDoZIkLCMUijLOYYN7EtMkYwKvDTLJqCuxMJgtlk~AvdQa-5vIjsMxKeY7rq5LTflZiU5eWjz20SU4xjNX94W9TzSxVzXvBr0e5DZHGZl3onIRHE0GM7QA7SHecgk8GMgGA) |
 
 <!-- EVENTS:END -->
+
+## How do I contribute?
+Contributions are welcome from all Biosciences staff and collaborators. Repositories within the organisation follow standard GitHub workflows — create a fork or branch, submit a pull request, and use issues for discussion. We can also discuss the transfer of existing repositories here if they are maintained collaboratively or support shared analysis.
+
+For general requests, questions, or ideas (e.g. training needs, new tools, or pipeline improvements), please open an [issue in the computational support repository](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/issues). This provides a single point for tracking and coordinating work across projects.
+
+All contributions should follow the relevant repository’s README and contribution guidelines.
+
 
 ## More Info
 
