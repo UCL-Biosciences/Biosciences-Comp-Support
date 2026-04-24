@@ -41,12 +41,12 @@ flowchart TD
 
 | Service | For | Size | Cost | Backed up | External sharing |
 |---|---|---|---|---|---|
-| **RDSS** | Unpublished research data | 1TB free, expandable | ~£50/TB/yr (chargeable to grants) | Yes | Yes (recently added) |
+| **RDSS** | Unpublished research data | 1TB free, expandable | free at point of use, ~£50/TB/yr should be charged to grants where possible | Yes | Yes (recently added) |
 | **RDR** | Published / archived datasets | 50GB/person (increasable) | Free | Yes (long-term) | Public (DOI issued) |
 | **DSH / TRE** | Sensitive/identifiable data | Varies | Contact ISD | Yes | Restricted |
 | **S Drive** | Team working files, large non-research | 200GB+ | Free up to limit; £0.15/GB/3yr beyond | Yes (hourly) | UCL only |
-| **OneDrive** | Light personal/collaborative docs | 1TB+ | Free (UCL subscription) | Yes | Yes (inc. external) |
-| **SharePoint** | Departmental/team/wider UCL content | Varies | Free | Yes | Yes (inc. external) |
+| **OneDrive** | Light personal/collaborative docs | 1TB+ | Free (UCL subscription) | Yes | Yes |
+| **SharePoint** | Departmental/team/wider UCL content | Varies | Free | Yes | Yes |
 | **HPC scratch** | Temporary compute I/O only | Large but shared | Free | **No** | No |
 
 ---
@@ -57,7 +57,7 @@ flowchart TD
 **Use when:** you have active, unpublished research data that needs to be shared within a project team.
 
 **Key facts:**
-- Projects are created by the **PI** at [storageadmin.rd.ucl.ac.uk](https://storageadmin.rd.ucl.ac.uk/projects/new) (UCL network required); processed within ~48hrs
+- Projects are created by the **PI** at [storageadmin.rd.ucl.ac.uk](https://storageadmin.rd.ucl.ac.uk/projects/new) (UCL network required); generally processed within a few days
 - Staff and students can be admins/members — good for large collaborative projects
 - 1TB free; request more through the same portal (cost to grant where possible)
 - **File limit:** 200,000 files per TB — for large genomics/imaging projects this bites faster than the storage limit; plan accordingly
@@ -122,7 +122,7 @@ flowchart TD
 ### OneDrive
 **Use when:** you need to sync and share lightweight documents across devices, or collaborate on Office files with internal or external colleagues.
 
-- 1TB+ via UCL's Microsoft 365 subscription
+- 100GB per user via UCL's Microsoft 365 subscription
 - Easy external sharing, works across devices
 - Not appropriate for primary research data storage — think of it as a working/collaboration layer
 
@@ -155,4 +155,4 @@ UCL's [Research Data Support team](mailto:researchdata-support@ucl.ac.uk) can ad
 | RDSS project setup, storage limits, file count issues | [researchdata-support@ucl.ac.uk](mailto:researchdata-support@ucl.ac.uk) |
 | DSH / TRE access | ISD / ARC |
 | DMP advice, RDR deposits | [researchdata-support@ucl.ac.uk](mailto:researchdata-support@ucl.ac.uk) |
-| HPC storage (Myriad scratch, Lustre) | See HPC guide *(coming soon)* |
+| HPC storage (Myriad scratch, Lustre) | See [HPC guide](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/blob/main/UCL_comp_guides/high_performance_compute_at_UCL.md) |
