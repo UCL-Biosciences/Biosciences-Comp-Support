@@ -12,7 +12,7 @@
 
 | You want to… | Approach |
 |---|---|
-| Give a collaborator ongoing access to a folder that stays in sync | Share access to RDSS or OneDrive directly — they always see current files |
+| Give a collaborator ongoing access to a folder that stays in sync | Share access to RDSS, SharePoint, S Drive or OneDrive directly — they always see current files |
 | Send a snapshot of files as they are now | Export/download and share a static file or archive (zip/tar) |
 | Make data permanently citable and public | Deposit to RDR or a domain repository — files are frozen at deposit |
 
@@ -34,7 +34,7 @@ flowchart TD
     D -- Yes --> E[📦 Domain repository or RDR\nGEO, ENA, Zenodo, RDR…]
     D -- No --> F{File size?}
     F -- "<20 MB" --> G["Email attachment (snapshot only)"]
-    F -- "<100 GB" --> H[Apparently Teams allows up to 100GB attachment]
+    F -- "<100 MB" --> H[Apparently Teams allows up to 100MB attachment up to 5GB]
     F -- ">10 GB" --> I[☁️ OneDrive or Sharepoint link also good for live links]
     F -- ">10 GB" --> J["📡Globus (resumable, overnight-safe)\nor RDSS for sharing large files"]
 
@@ -59,7 +59,7 @@ All options below share **live files** — recipients always see the current sta
 |---|---|---|---|---|---|
 | **RDSS — direct access** | Ongoing collaboration | TB scale | Yes (PI grants) | To manage via storageadmin; not for recipient | Yes |
 | **RDSS — shared link** | One-off access to specific files | TB scale | Yes | No | Yes |
-| **OneDrive link** | Small files, Office docs, quick shares | ??? | Yes | No | Yes |
+| **OneDrive link** | Small files, Office docs, quick shares | MBs up to few GB | Yes | No | Yes |
 | **SharePoint** | Team/departmental documents | Varies | Yes | No | Yes |
 | **Globus** | Large/bulk transfers, HPC-to-HPC | Effectively unlimited | Yes | No | Yes |
 | **RDR** | Published / archived datasets | 50 GB default | Public (DOI) | No | **No — frozen at deposit** |
@@ -83,7 +83,7 @@ All options below share **live files** — recipients always see the current sta
 
 ### RDSS folder permissions
 
-Permissions can be scoped per folder: read, read/write, or read/write/execute. Use this to give collaborators access only to what they need — for example, a `data/shared/` subdirectory rather than the whole project root. Managed via storageadmin (UCL network or VPN required).
+Permissions can be scoped per folder: read, read/write, or read/write/execute. Use this to give collaborators access only to what they need — for example, a `data/shared/` subdirectory rather than the whole project root. Managed via [storageadmin](https://storageadmin.rd.ucl.ac.uk/) (UCL network or VPN required).
 
 ### Link permissions (OneDrive / SharePoint / RDSS)
 
@@ -154,4 +154,4 @@ See the HPC guide for Myriad scratch policies and mounting RDSS on the cluster.
 | Globus endpoint setup, HPC transfers | [researchdata-support@ucl.ac.uk](mailto:researchdata-support@ucl.ac.uk) |
 | DSH / TRE access | ISD / ARC |
 | VPN setup | [ISD VPN guidance](https://www.ucl.ac.uk/isd/services/get-connected/ucl-virtual-private-network-vpn) |
-| HPC storage and scratch policies | See HPC guide *(coming soon)* |
+| HPC storage and scratch policies | See [HPC guide](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/blob/main/UCL_comp_guides/high_performance_compute_at_UCL.md) |
