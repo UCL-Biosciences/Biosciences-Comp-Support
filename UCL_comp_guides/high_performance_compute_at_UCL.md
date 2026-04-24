@@ -79,6 +79,9 @@ When you SSH into an HPC system, you land on a **login node** — a shared machi
 
 **Compute nodes** are where your analysis actually runs. You never access them directly — instead you describe what resources you need (cores, memory, time) in a job script, submit it to the queue, and the scheduler allocates you a compute node when one is available. This batch model is the fundamental difference from working on a laptop.
 
+### GPUs
+GPUs are available on myriad. To submit a job requesting GPUs, see [here](https://www.rc.ucl.ac.uk/docs/Example_Jobscripts/#gpu-job-script-example).
+
 ### The basic workflow
 
 Myriad and Kathleen use **SGE (Sun Grid Engine)**. The CS cluster scheduler details are available at [hpc.cs.ucl.ac.uk](https://hpc.cs.ucl.ac.uk/). If you have used SLURM elsewhere, the concepts are the same but the syntax differs.
