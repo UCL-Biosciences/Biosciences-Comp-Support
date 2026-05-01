@@ -19,16 +19,3 @@ aux_links:
   "UCL Biosciences": https://www.ucl.ac.uk/biosciences/
 
 aux_links_new_tab: true
-
-# # Collections for organizing content
-# collections:
-#   guides:
-#     permalink: /:path/
-#     output: true
-
-# defaults:
-#   - scope:
-#       path: "guides"
-#     values:
-#       layout: default
-#       nav_order: 1
