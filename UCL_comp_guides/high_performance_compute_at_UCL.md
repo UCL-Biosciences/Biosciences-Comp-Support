@@ -53,7 +53,7 @@ UCL has two main HPC platforms available to Biosciences researchers: systems man
 
 | System | Best for | Scheduler | Free to use | GPU | More info |
 |---|---|---|---|---|---|
-| **Myriad** | General research computing, most biosciences workloads | SGE | Yes (UCL staff/students) | Yes but queuing times can be long in busy periods | [rc.ucl.ac.uk/docs/Clusters/Myriad](https://www.rc.ucl.ac.uk/docs/Clusters/Myriad/) |
+| **Myriad** | General research computing, most biosciences workloads | SGE | Yes (UCL staff/students) | Yes | [rc.ucl.ac.uk/docs/Clusters/Myriad](https://www.rc.ucl.ac.uk/docs/Clusters/Myriad/) |
 | **Kathleen** | High-throughput parallel jobs, large core counts | SGE | Yes (UCL staff/students) | No | [rc.ucl.ac.uk/docs/Clusters/Kathleen](https://www.rc.ucl.ac.uk/docs/Clusters/Kathleen/) |
 | **CS HPC cluster** | *[Details to be added]* | *TBC* | *TBC* | *TBC* | [hpc.cs.ucl.ac.uk](https://hpc.cs.ucl.ac.uk/) |
 
