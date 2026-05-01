@@ -1,0 +1,33 @@
+title: UCL Biosciences Computational Support
+description: Guides for HPC, data storage, data sharing, and training resources
+theme: just-the-docs
+
+url: https://ucl-biosciences.github.io/Biosciences-Comp-Support
+
+# Just the docs theme settings
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+back_to_top: true
+back_to_top_text: "Back to top"
+footer_content: "UCL Biosciences | <a href=\"mailto:researchdata-support@ucl.ac.uk\">Contact us</a>"
+
+aux_links:
+  "GitHub": https://github.com/UCL-Biosciences/Biosciences-Comp-Support
+  "UCL Advanced Research Computing": https://www.rc.ucl.ac.uk/
+  "UCL Biosciences": https://www.ucl.ac.uk/biosciences/
+
+aux_links_new_tab: true
+
+# Collections for organizing content
+collections:
+  guides:
+    permalink: /:path/
+    output: true
+
+defaults:
+  - scope:
+      path: "guides"
+    values:
+      layout: default
+      nav_order: 1
