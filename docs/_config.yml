@@ -1,6 +1,6 @@
 title: UCL Biosciences Computational Support
 description: Guides for HPC, data storage, data sharing, and training resources
-theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 
 url: https://ucl-biosciences.github.io/Biosciences-Comp-Support
 
