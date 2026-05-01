@@ -6,7 +6,7 @@ nav_order: 0
 
 # UCL Biosciences Computational Guides
 
-Guides to navigating UCL's computational resources — data storage, HPC, data sharing, and training.
+Guides to navigating UCL's computational resources — data storage, HPC, data sharing, and training. For general information about Division of Biosciences computational support, see [here](https://github.com/UCL-Biosciences/Biosciences-Comp-Support).
 
 ---
 
