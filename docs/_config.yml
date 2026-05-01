@@ -19,3 +19,6 @@ aux_links:
   "UCL Biosciences": https://www.ucl.ac.uk/biosciences/
 
 aux_links_new_tab: true
+
+mermaid:
+  version: "10.6.1"
