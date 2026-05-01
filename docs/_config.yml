@@ -3,6 +3,7 @@ description: Guides for HPC, data storage, data sharing, and training resources
 remote_theme: just-the-docs/just-the-docs
 
 url: https://ucl-biosciences.github.io/Biosciences-Comp-Support
+baseurl: "/Biosciences-Comp-Support"
 
 # Just the docs theme settings
 color_scheme: light
