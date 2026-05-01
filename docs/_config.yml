@@ -20,15 +20,15 @@ aux_links:
 
 aux_links_new_tab: true
 
-# Collections for organizing content
-collections:
-  guides:
-    permalink: /:path/
-    output: true
+# # Collections for organizing content
+# collections:
+#   guides:
+#     permalink: /:path/
+#     output: true
 
-defaults:
-  - scope:
-      path: "guides"
-    values:
-      layout: default
-      nav_order: 1
+# defaults:
+#   - scope:
+#       path: "guides"
+#     values:
+#       layout: default
+#       nav_order: 1
