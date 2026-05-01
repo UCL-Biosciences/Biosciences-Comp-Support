@@ -12,16 +12,16 @@ Guides to navigating UCL's computational resources — data storage, HPC, data s
 
 ## 📚 Guides
 
-### [🖥️ HPC & Cloud Computing](/Biosciences-Comp-Support/guides/hpc/)
+### [🖥️ HPC & Cloud Computing](/Biosciences-Comp-Support/guides/hpc.html)
 Your analysis is too slow or memory-hungry for a laptop? Overview of Myriad, Kathleen, national facilities (ARCHER2, JADE2), and cloud options.
 
-### [🗄️ Data Storage](/Biosciences-Comp-Support/guides/storage/)
+### [🗄️ Data Storage](/Biosciences-Comp-Support/guides/storage.html)
 Where should you store research data? Decision guide covering RDSS, RDR, OneDrive, S Drive, and when to use each.
 
-### [📤 Data Sharing & Transfer](/Biosciences-Comp-Support/guides/data-sharing/)
+### [📤 Data Sharing & Transfer](/Biosciences-Comp-Support/guides/data-sharing.html)
 How to share large files with collaborators or make data public. Covers permissions, practical transfer methods, and Globus.
 
-### [📖 Training & Support](/Biosciences-Comp-Support/guides/training/)
+### [📖 Training & Support](/Biosciences-Comp-Support/guides/training.html)
 Drop-in sessions, training resources, and skill profiles by research area (genomics, imaging, ML, modelling, etc.).
 
 ---
