@@ -49,7 +49,7 @@ The table below lists upcoming and recent events. It is automatically generated 
 
 | Date | Title | Location | Description | Link |
 |------|-------|----------|-------------|------|
-| 2026-01-21 | AI-powered Life Science Data Analysis Workshop | online | A free, practical session on using ChatGPT and Claude Code to speed up neuroscience and life science data analysis. Seats are limited, register today! | [link](https://events.zoom.us/ev/Ahyi_TfHIfPJIDoZIkLCMUijLOYYN7EtMkYwKvDTLJqCuxMJgtlk~AvdQa-5vIjsMxKeY7rq5LTflZiU5eWjz20SU4xjNX94W9TzSxVzXvBr0e5DZHGZl3onIRHE0GM7QA7SHecgk8GMgGA) |
+| – | – | – | – | – |
 
 <!-- EVENTS:END -->
 
