@@ -17,7 +17,7 @@ The Data Science team helps researchers plan, run, and maintain computational an
 |---|---|
 | [Auto-Prot](https://github.com/UCL-Biosciences/Auto-Prot) | Pipeline for automated mass spec proteomics analysis |
 | [Computational Training 2025](https://github.com/UCL-Biosciences/2025_Biosciences_Computational_Training_Material) | Materials from our annual training series for biologists |
-| Image Analysis | [Fortnightly drop-ins](https://www.uclccmd.co.uk/drop-in) (Starling Room, 10:30–11:30) supporting reproducible image analysis with Python. Contact: biosciences.imaging@ucl.ac.uk |
+| Image Analysis | [Fortnightly drop-ins](https://www.uclccmd.co.uk/drop-in) (Darwin Common Room, 10:30–11:30) supporting reproducible image analysis with Python. Contact: biosciences.imaging@ucl.ac.uk |
 | nextflow/nf-core | Support for automated, reproducible pipelines including [nf-core/rnaseq](https://nf-co.re/rnaseq). |
 | [UCL Comp Guides](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/tree/main/UCL_comp_guides) | Guides for navigating UCL's computational resources including data storage, sharing and using HPCs |
 
