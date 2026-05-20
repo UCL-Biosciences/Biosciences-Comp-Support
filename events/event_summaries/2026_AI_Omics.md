@@ -6,4 +6,4 @@ We had 10 excellent speakers from a range of disciplines. There was a large tech
 
 Feedback from the event was positive, with respondents rating it 4.9/5 for usefulness. The opportunity to see the breadth of research happening in this space was highlighted as a something people enjoyed. We also received some useful and instructive suggestions for next steps, including training, centrally managed tools, and for repeating this event in future! We know the event led to multiple conversations about new collaborations, too, which is a fantastic outcome. So thanks again to all participants and to AIBIO for the funding.
 
-Hosted by UCL Biocsiences and Centre for Advanced Research Computing
+_Funded by UK AIBIO (thanks!!), hosted by UCL Biocsiences and Centre for Advanced Research Computing_
