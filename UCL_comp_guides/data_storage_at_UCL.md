@@ -64,21 +64,24 @@ flowchart TD
 - **Project duration:** initially 5 years; extensions can be requested through the RDSS admin portal.
 - Storage usage visible at [storageadmin.rd.ucl.ac.uk](https://storageadmin.rd.ucl.ac.uk) — updated overnight, not live. `du -sh` from an rdss project directory will show _double_ the actual size due to the mirrored storage system. Expected behaviour - good to be aware of.
 - External collaborators can now be granted direct access
-
+- **Roll accounts** - **Nick** to add something here. ********************************
+- **Nick** to add point about projects with large files
+ 
 **Gotchas:**
-- You must be on the UCL network (or VPN) to create or manage a project
-- The 5-year cap means long-running projects need a migration plan — don't leave this to the last minute
-- Large numbers of small files (e.g. Nanopore fast5/pod5, image stacks) will hit the file count limit before the storage limit; consider archiving to tar or using a format like zarr/HDF5
+- You must be on the UCL network (or VPN) to create, manage or access a project
 
 **Tips:**
 - Structure your project directory from day one — it's painful to reorganise later when the project has 10 members
 - Set up a `scratch/` or `tmp/` subdirectory for intermediate files so the important stuff is easy to find
 - PhD students: make sure your PI has set up the RDSS project before you start generating data
 
+**Project Setup/Structure**
+- *Nick* to add something here.
+
 ---
 
 ### RDR — UCL Research Data Repository
-**Use when:** a project is ending, a paper is being submitted, or a funder requires data archiving.
+**Use when:** a project is ending or a paper is being submitted and there is no domain-specific repository available.
 
 **Key facts:**
 - Data is **publicly accessible** and assigned a DOI — treat it as permanent publication
@@ -87,21 +90,22 @@ flowchart TD
 
 **Gotchas:**
 - Once data is deposited and public, you cannot easily unpublish it — make sure you have consent/ethics approval to share before uploading
-- The 50GB default limit is low for genomics or imaging; request an increase early, not the day before submission
+- The 50GB default limit is low for some projects; request an increase early, not the day before submission
 
 **Tips:**
 - Check your funder's preferred repository before depositing (UKRI often accepts Zenodo; Wellcome prefers specific repos for certain data types)
 - Deposit raw data, not just processed outputs — reviewers and future researchers will thank you
+- Identify the appropriate metadata and submit as much as possible
 
 ---
 
-### DSH / TRE — Data Safe Haven & Trusted Research Environment
+### TRE / DSH —  Trusted Research Environment and Data Safe Haven
 **Use when:** data contains sensitive or identifiable information, e.g. NHS patient records, linked administrative data, or anything requiring ethical controls on access.
 
 **Key facts:**
-- DSH is the current service; ARC is building a new TRE with more compute flexibility
+- ARC has a new TRE with more compute flexibility; DSH is also still available
 - Access and egress are controlled and audited
-- Contact ISD or ARC to discuss your project before starting — setup takes time
+- Contact ARC to discuss your project before starting — setup takes time
 
 **Gotchas:**
 - Do not store sensitive data on RDSS, OneDrive, or S Drive, even temporarily
@@ -132,6 +136,7 @@ flowchart TD
 
 - Good for lab wikis, shared protocols, department resources
 - Not appropriate for large or sensitive research datasets
+- Ongoing project to move SharePoint projects to data hubs - more info on its way
 
 ---
 
@@ -143,7 +148,7 @@ Most major funders now require a **Data Management Plan (DMP)** at application s
 - **Wellcome**: requires open access data deposition; has specific guidance for genomics, imaging, and clinical data types.
 - **Horizon Europe**: open data by default; DMPs required.
 
-UCL's [Research Data Support team](mailto:researchdata-support@ucl.ac.uk) can advise on DMPs and help identify the right repository. The [DMP Online tool](https://dmponline.dcc.ac.uk/) has funder-specific templates.
+UCL's [Research Data Management Team](https://library-guides.ucl.ac.uk/research-data-management/writing) can advise on DMPs and help identify the right repository. The [DMP Online tool](https://dmponline.dcc.ac.uk/) has funder-specific templates.
 
 ---
 
@@ -152,6 +157,6 @@ UCL's [Research Data Support team](mailto:researchdata-support@ucl.ac.uk) can ad
 | Need | Contact |
 |---|---|
 | RDSS project setup, storage limits, file count issues | [researchdata-support@ucl.ac.uk](mailto:researchdata-support@ucl.ac.uk) |
-| DSH / TRE access | ISD / ARC |
+| DSH / TRE access | ARC |
 | DMP advice, RDR deposits | [researchdata-support@ucl.ac.uk](mailto:researchdata-support@ucl.ac.uk) |
 | HPC storage (Myriad scratch, Lustre) | See [HPC guide](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/blob/main/UCL_comp_guides/high_performance_compute_at_UCL.md) |
