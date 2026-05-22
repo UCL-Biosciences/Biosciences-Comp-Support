@@ -44,27 +44,26 @@ flowchart TD
 | **RDSS** | Unpublished research data | 1TB free, expandable | free at point of use, ~£50/TB/yr should be charged to grants where possible | Yes | Yes (recently added) |
 | **RDR** | Published / archived datasets | 50GB/person (increasable) | Free | Yes (long-term) | Public (DOI issued) |
 | **DSH / TRE** | Sensitive/identifiable data | Varies | Contact ISD | Yes | Restricted |
-| **S Drive** | Team working files, large non-research | 200GB+ | Free up to limit; £0.15/GB/3yr beyond | Yes (hourly) | UCL only |
-| **OneDrive** | Light personal/collaborative docs | 1TB+ | Free (UCL subscription) | Yes | Yes |
+| **S Drive** | Non-research data | 200GB+ | Free up to limit; £0.15/GB/3yr beyond | Yes (hourly) | UCL only |
+| **OneDrive** | Light personal/collaborative docs | 100GB | Free (via UCL subscription) | Yes | Yes |
 | **SharePoint** | Departmental/team/wider UCL content | Varies | Free | Yes | Yes |
-| **HPC scratch** | Temporary compute I/O only | Large but shared | Free | **No** | No |
 
 ---
 
 ## Service details
 
 ### RDSS — Research Data Storage Service
-**Use when:** you have active, unpublished research data that needs to be shared within a project team.
+**Use for:** any and all research data
 
 **Key facts:**
+- UCL research data policy states research data should be stored on the RDSS
 - Projects are created by the **PI** at [storageadmin.rd.ucl.ac.uk](https://storageadmin.rd.ucl.ac.uk/projects/new) (UCL network required); generally processed within a few days
 - Staff and students can be admins/members — good for large collaborative projects
 - 1TB free; request more through the same portal (cost to grant where possible)
-- **File limit:** 200,000 files per TB — for large genomics/imaging projects this bites faster than the storage limit; plan accordingly
-- **Project max duration:** 5 years from registration date; PI gets email warning before expiry
-- Storage usage visible at [storageadmin.rd.ucl.ac.uk](https://storageadmin.rd.ucl.ac.uk) — updated overnight, not live
+- **File limit:** initial limit of 200,000 files per project. Large projects can request a higher limit through MyServices.
+- **Project duration:** initially 5 years; extensions can be requested through the RDSS admin portal.
+- Storage usage visible at [storageadmin.rd.ucl.ac.uk](https://storageadmin.rd.ucl.ac.uk) — updated overnight, not live. `du -sh` from an rdss project directory will show _double_ the actual size due to the mirrored storage system. Expected behaviour - good to be aware of.
 - External collaborators can now be granted direct access
-- Per-folder permissions can be set (read/write/execute) — useful for giving team members private subdirectories
 
 **Gotchas:**
 - You must be on the UCL network (or VPN) to create or manage a project
