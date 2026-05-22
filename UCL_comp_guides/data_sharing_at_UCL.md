@@ -12,9 +12,9 @@
 
 | You want to… | Approach |
 |---|---|
-| Give a collaborator ongoing access to a folder that stays in sync | Share access to RDSS, SharePoint, S Drive or OneDrive directly — they always see current files |
+| Give a collaborator ongoing access to a folder that stays in sync | Share access to RDSS |
 | Send a snapshot of files as they are now | Export/download and share a static file or archive (zip/tar) |
-| Make data permanently citable and public | Deposit to RDR or a domain repository — files are frozen at deposit |
+| Make data permanently citable and public | Deposit to RDR or a domain repository — files are frozen at deposit. A DOI can be generated and point to a specific version of the data |
 
 **2. How sensitive is the data?**
 
@@ -59,12 +59,7 @@ All options below share **live files** — recipients always see the current sta
 |---|---|---|---|---|---|
 | **RDSS — direct access** | Ongoing collaboration | TB scale | Yes (PI grants) | To manage via storageadmin; not for recipient | Yes |
 | **RDSS — shared link** | One-off access to specific files | TB scale | Yes | No | Yes |
-| **OneDrive link** | Small files, Office docs, quick shares | MBs up to few GB | Yes | No | Yes |
-| **SharePoint** | Team/departmental documents | Varies | Yes | No | Yes |
 | **Globus** | Large/bulk transfers, HPC-to-HPC | Effectively unlimited | Yes | No | Yes |
-| **RDR** | Published / archived datasets | 50 GB default | Public (DOI) | No | **No — frozen at deposit** |
-| **Domain repository** | Published data in your field | Varies | Public | No | **No — frozen at deposit** |
-| **DSH / TRE** | Sensitive / identifiable data | Varies | Controlled | Inside TRE only | Yes |
 
 ---
 
@@ -74,25 +69,12 @@ All options below share **live files** — recipients always see the current sta
 
 | Action | Who |
 |---|---|
-| Add/remove members, set folder permissions | PI or designated project admin |
-| Grant external collaborator access to RDSS | PI or admin, via [storageadmin.rd.ucl.ac.uk](https://storageadmin.rd.ucl.ac.uk) (UCL network or VPN required) |
-| Share an OneDrive or SharePoint link | Any UCL user |
-| Set link expiry or restrict to view-only | Any UCL user (in the share dialog) |
+| Add/remove members, admins and external collaborator on RDSS  | PI or admin, via [storageadmin.rd.ucl.ac.uk](https://storageadmin.rd.ucl.ac.uk) (UCL network or VPN required) |
 | Request a Globus endpoint | Any UCL user via [rc-support@ucl.ac.uk](mailto:rc-support@ucl.ac.uk) |
-| Deposit to RDR | Any UCL researcher |
 
 ### RDSS folder permissions
 
 Permissions can be scoped per folder: read, read/write, or read/write/execute. Use this to give collaborators access only to what they need — for example, a `data/shared/` subdirectory rather than the whole project root. Managed via [storageadmin](https://storageadmin.rd.ucl.ac.uk/) (UCL network or VPN required).
-
-### Link permissions (OneDrive / SharePoint / RDSS)
-
-When sharing via link, always consider:
-
-- **View-only vs edit** — use view-only unless the recipient needs to add or change files
-- **Expiry date** — set one for any external share; there is no automatic expiry
-- **Password protection** — available for OneDrive links; useful for anything going outside UCL
-- **Specific people vs anyone with the link** — prefer specific people where possible
 
 ### Guest / external account setup
 
@@ -106,7 +88,7 @@ External collaborators need either a UCL guest account or an institutional accou
 
 ### File size
 
-File size affects which method is practical rather than which is permitted. For small files, email attachments or OneDrive links are fine. As files get larger — multi-GB datasets, image stacks, sequencing outputs — browser-based uploads become unreliable and slow, and a dropped connection means starting again. At this scale RDSS links are more robust, and for anything in the tens of gigabytes or above, Globus is strongly preferable: it handles interruptions, can be left to run overnight, and verifies integrity automatically. There is no hard upper limit on Globus transfers, but very large transfers (hundreds of GB or more) are worth discussing with ARC (researchdata-support@ucl.ac.uk) beforehand, particularly if data is moving to or from Myriad scratch where purge policies apply.
+File size affects which method is practical rather than which is permitted. For small files, email attachments or OneDrive links are fine. As files get larger — multi-GB datasets, image stacks, sequencing outputs — browser-based uploads become unreliable and slow, and a dropped connection means starting again. At this scale RDSS links are more robust, and for anything in the tens of gigabytes or above, Globus is strongly preferable: it handles interruptions, can be left to run overnight, and verifies integrity automatically. There is no hard upper limit on Globus transfers, but very large transfers (hundreds of GB or more) are worth discussing with ARC (researchdata-support@ucl.ac.uk) beforehand.
 
 ### Upload speed and reliability
 
@@ -115,31 +97,31 @@ Network connection makes a large difference for anything over a few GB:
 - **Wired ethernet on campus** — fastest and most reliable; use this for large transfers where possible
 - **Eduroam (campus Wi-Fi)** — adequate for moderate transfers but shared bandwidth; avoid peak hours (10am–3pm) for anything substantial
 - **Home broadband** — upload speeds are typically 10–50 Mbps; a 100 GB transfer can take several hours. Use Globus rather than browser-based tools — it handles dropped connections and resumes automatically
-- **Off-peak scheduling** — Globus transfers can be left to run overnight without supervision; prefer this for anything over ~50 GB
+- **Off-peak scheduling** — Globus transfers can be left to run without supervision; prefer this for anything over ~50 GB. Globus has internal checks on data transfer success via checksums.
 - As a rough guide: 100 GB at 50 Mbps upload takes around 4–5 hours; on a 1 Gbps campus connection, around 15 minutes
 
 ### VPN
-(Need to verify this)
+
 UCL's GlobalProtect VPN is required to access some systems from off-campus:
 
-- **Required:** storageadmin portal (to manage RDSS projects and permissions), S Drive, some legacy UCL services
-- **Not required:** OneDrive, SharePoint, RDR, Globus transfers, RDSS shared links
+- **Required:** storageadmin portal (to manage RDSS projects and permissions)
+- **Not required:** OneDrive, SharePoint, RDR, Globus transfers, RDSS shared links, TRE
 
 If you are managing a project or setting up external access remotely, connect to VPN first. VPN setup instructions: [ucl.ac.uk/isd/services/get-connected/ucl-virtual-private-network-vpn](https://www.ucl.ac.uk/isd/services/get-connected/ucl-virtual-private-network-vpn)
 
 ### Transferring from HPC (Myriad)
 
-Myriad scratch is not backed up and is subject to purge — do not leave data there waiting to be transferred. When a job completes:
+Myriad scratch is not backed up and subject to limits — do not leave data there waiting to be transferred. When a job completes:
 
 1. Move outputs to **RDSS** promptly via `rsync` or the file manager
 2. For large datasets going to an external collaborator, stage on RDSS then use **Globus** to transfer
-3. Do not treat scratch as a staging area for more than a day or two
+3. Scratch is temporary storage only
 
 See the HPC guide for Myriad scratch policies and mounting RDSS on the cluster.
 
 ### Format considerations
 
-- **Many small files** (Nanopore fast5/pod5, image stacks) transfer slowly and hit the RDSS file count limit (200,000 files/TB) faster than the storage limit — consider archiving to `tar` first, or use consolidated formats like HDF5/zarr/OME-Zarr
+- **Many small files** (Nanopore fast5/pod5, image stacks) transfer slowly and hit the RDSS file count limit (200,000 files/project initial limit) faster than the storage limit
 - **Checksums** — verify integrity for large transfers with `md5sum` or `sha256sum` at both ends; Globus does this automatically, manual transfers do not. Short guide [here](https://github.com/jdgilbert245/Comp-Guides-and-QuickStarts/blob/main/hpc/quickstart-md5check.md).
 - **Compression** — often not worthwhile for already-compressed formats (FASTQ.gz, CRAM, PNG)
 
@@ -152,6 +134,6 @@ See the HPC guide for Myriad scratch policies and mounting RDSS on the cluster.
 |---|---|
 | RDSS external access, guest accounts, project setup | [researchdata-support@ucl.ac.uk](mailto:researchdata-support@ucl.ac.uk) |
 | Globus endpoint setup, HPC transfers | [researchdata-support@ucl.ac.uk](mailto:researchdata-support@ucl.ac.uk) |
-| DSH / TRE access | ISD / ARC |
+| DSH / TRE access | ARC |
 | VPN setup | [ISD VPN guidance](https://www.ucl.ac.uk/isd/services/get-connected/ucl-virtual-private-network-vpn) |
 | HPC storage and scratch policies | See [HPC guide](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/blob/main/UCL_comp_guides/high_performance_compute_at_UCL.md) |
