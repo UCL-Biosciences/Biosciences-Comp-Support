@@ -1,5 +1,5 @@
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 import pandas as pd
 
@@ -68,9 +68,9 @@ def main():
         lambda d: datetime.strptime(d.strip(), "%a, %d %b %Y")
     )
 
-    # Filter future events
+    # Filter for future events, including today
     now = datetime.utcnow()
-    df_future = df[df["parsed_date"] > now].sort_values("parsed_date")
+    df_future = df[df["parsed_date"] > now - timedelta(days=1) ].sort_values("parsed_date")
 
     # Get next 3 events
     next_three = df_future.head(3)
