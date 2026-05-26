@@ -70,7 +70,7 @@ def main():
 
     # Filter for future events, including today
     today = pd.Timestamp.now().normalize()
-    df_future = df[df["parsed_date"] >= today ].sort_values("parsed_date")
+    df["parsed_date"] = pd.to_datetime(df["Date"].str.strip(), format="%a, %d %b %Y")
 
     # Get next 3 events
     next_three = df_future.head(3)
