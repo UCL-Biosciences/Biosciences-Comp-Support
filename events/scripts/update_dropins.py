@@ -1,5 +1,5 @@
 import re
-from datetime import datetime, timedelta
+from datetime import datetime, timezone
 from pathlib import Path
 import pandas as pd
 
@@ -69,7 +69,7 @@ def main():
     )
 
     # Filter for future events, including today
-    today = datetime.now(datetime.UTC).replace(hour=0, minute=0, second=0, microsecond=0)
+    today = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
     df_future = df[df["parsed_date"] >= today ].sort_values("parsed_date")
 
     # Get next 3 events
