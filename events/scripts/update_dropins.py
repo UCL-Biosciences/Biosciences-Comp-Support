@@ -69,7 +69,7 @@ def main():
     )
 
     # Filter for future events, including today
-    today = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
+    today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
     df_future = df[df["parsed_date"] >= today ].sort_values("parsed_date")
 
     # Get next 3 events
