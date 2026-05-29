@@ -127,7 +127,7 @@ HPC storage is **not** the same as research data storage — see the storage gui
 
 ### Myriad ↔ RDSS
 
-RDSS can be accessed directly from Myriad. See the ISD guide for current setup instructions: [ucl.ac.uk/isd/how-to/rdss-myriad-data-storage-transfer-service](https://www.ucl.ac.uk/isd/how-to/rdss-myriad-data-storage-transfer-service)
+RDSS can be accessed directly from Myriad login nodes. See the ISD guide for current setup instructions: [ucl.ac.uk/isd/how-to/rdss-myriad-data-storage-transfer-service](https://www.ucl.ac.uk/isd/how-to/rdss-myriad-data-storage-transfer-service)
 
 ### Moving data to/from HPC
 
