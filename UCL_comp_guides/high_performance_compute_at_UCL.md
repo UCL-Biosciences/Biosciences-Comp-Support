@@ -125,8 +125,6 @@ HPC storage is **not** the same as research data storage — see the storage gui
 | `$TMPDIR` | Temporary files within a single job | **No** | On job end |
 | RDSS (mounted) | Long-term research data | Yes | No |
 
-**The most common mistake** is leaving outputs on scratch after a job finishes. Scratch is subject to purge — data may be deleted without warning. Move results to RDSS as soon as a job completes.
-
 ### Myriad ↔ RDSS
 
 RDSS can be accessed directly from Myriad. See the ISD guide for current setup instructions: [ucl.ac.uk/isd/how-to/rdss-myriad-data-storage-transfer-service](https://www.ucl.ac.uk/isd/how-to/rdss-myriad-data-storage-transfer-service)
