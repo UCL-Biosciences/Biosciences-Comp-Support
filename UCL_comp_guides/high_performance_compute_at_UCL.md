@@ -131,9 +131,9 @@ RDSS can be accessed directly from Myriad login nodes. See the ISD guide for cur
 
 ### Moving data to/from HPC
 
-- **Small files**: `scp` or `rsync` over SSH to the login node
+- **Small files**: `scp` or `rsync` over SSH to the RDSS or login node
 - **Large files**: use Globus (see data sharing guide) — more reliable than rsync for large transfers and can be left unattended
-- **From RDSS to scratch before a job**: use `rsync` from the login node once RDSS is mounted
+- **From RDSS to scratch before a job**: use `rsync` from the login node to copy from RDSS to scratch. Myriad compute-nodes can't read from RDSS
 
 ---
 
