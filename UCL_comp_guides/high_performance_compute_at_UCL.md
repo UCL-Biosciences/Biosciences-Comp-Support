@@ -187,7 +187,6 @@ HPC has a learning curve and is not always the most efficient route. Consider al
 - **Your analysis is interactive** — HPC batch queues mean waiting; for exploratory work a cloud VM or UCL's virtual desktop may be faster to iterate on
 - **You need specialist infrastructure** — clinical data requires the DSH/TRE; some deep learning workloads are better served by JADE2 or cloud GPU instances
 - **Your collaborators need access** — national facilities or cloud are often easier to share with external partners than UCL HPC
-- **You need to scale quickly** — cloud can provision resources in minutes; HPC allocations take time
 
 ---
 
