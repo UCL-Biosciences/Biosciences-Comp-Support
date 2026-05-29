@@ -118,12 +118,10 @@ Full ARC documentation including array jobs, GPU requests, and interactive sessi
 
 HPC storage is **not** the same as research data storage — see the storage guide for RDSS, RDR, and related services. The table below refers to Myriad/Kathleen; CS cluster storage is described at [hpc.cs.ucl.ac.uk](https://hpc.cs.ucl.ac.uk/).
 
-> ⚠️ **The backup and purge details in this table need verifying against current Myriad policy — treat with caution until confirmed.**
-
 | Location | Purpose | Backed up | Purged |
 |---|---|---|---|
 | `$HOME` | Scripts, config, small files | Yes | No |
-| `$SCRATCH` (`/scratch/`) | Job input/output during runs | **No** | **Yes — check current policy** |
+| `$SCRATCH` (`/scratch/`) | Job input/output during runs | **No** | No |
 | `$TMPDIR` | Temporary files within a single job | **No** | On job end |
 | RDSS (mounted) | Long-term research data | Yes | No |
 
