@@ -41,9 +41,9 @@ flowchart TD
 
 | Service | For | Size | Cost | Backed up | External sharing |
 |---|---|---|---|---|---|
-| **RDSS** | Unpublished research data | 1TB free, expandable | free at point of use, ~£50/TB/yr should be charged to grants where possible | Yes | Yes (recently added) |
+| **RDSS** | All research data that is not sensitive | 1TB free, expandable | free at point of use, ~£50/TB/yr should be charged to grants where possible | Yes | Yes (recently added) |
 | **RDR** | Published / archived datasets | 50GB/person (increasable) | Free | Yes (long-term) | Public (DOI issued) |
-| **DSH / TRE** | Sensitive/identifiable data | Varies | Contact ISD | Yes | Restricted |
+| **DSH / TRE** | Sensitive/identifiable data | Varies | Contact ARC | Yes | Restricted |
 | **S Drive** | Non-research data | 200GB+ | Free up to limit; £0.15/GB/3yr beyond | Yes (hourly) | UCL only |
 | **OneDrive** | Light personal/collaborative docs | 100GB | Free (via UCL subscription) | Yes | Yes |
 | **SharePoint** | Departmental/team/wider UCL content | Varies | Free | Yes | Yes |
@@ -53,19 +53,20 @@ flowchart TD
 ## Service details
 
 ### RDSS — Research Data Storage Service
-**Use for:** any and all research data
+**Use for:** any and all research data that is not sensitive
 
 **Key facts:**
 - UCL research data policy states research data should be stored on the RDSS
-- Projects are created by the **PI** at [storageadmin.rd.ucl.ac.uk](https://storageadmin.rd.ucl.ac.uk/projects/new) (UCL network required); generally processed within a few days
-- Staff and students can be admins/members — good for large collaborative projects
+- Projects are created by the **PI** at [storageadmin.rd.ucl.ac.uk](https://storageadmin.rd.ucl.ac.uk/projects/new) (UCL network required i.e. VPN if remote); generally processed within a few days
+- Staff and students can be admins/members — good for research groups and large collaborative projects
 - 1TB free; request more through the same portal (cost to grant where possible)
 - **File limit:** initial limit of 200,000 files per project. Large projects can request a higher limit through MyServices.
 - **Project duration:** initially 5 years; extensions can be requested through the RDSS admin portal.
 - Storage usage visible at [storageadmin.rd.ucl.ac.uk](https://storageadmin.rd.ucl.ac.uk) — updated overnight, not live. `du -sh` from an rdss project directory will show _double_ the actual size due to the mirrored storage system. Expected behaviour - good to be aware of.
 - External collaborators can now be granted direct access
-- **Roll accounts** - **Nick** to add something here. ********************************
-- **Nick** to add point about projects with large files
+- **Role accounts** - To mount the RDSS on equipment or shared machines, a role account can be applied for through MyServices. This account can then be added by the ARC RDSS team to a project to enable mounting. Note: PI/Admins of a project will not be able add the role account directly
+- Transfer of data, especially large volumes, can be facilitated using the UCL Globus service -enabling easy `set and forget` copying to the RDSS
+- Consider organising data before transferring to the RDSS, it will benefit everyone
  
 **Gotchas:**
 - You must be on the UCL network (or VPN) to create, manage or access a project
@@ -73,7 +74,10 @@ flowchart TD
 **Tips:**
 - Structure your project directory from day one — it's painful to reorganise later when the project has 10 members
 - Set up a `scratch/` or `tmp/` subdirectory for intermediate files so the important stuff is easy to find
+- Set up a `README.txt` or markdown document in the main project folder that explains to members how the project organisation should be followed 
 - PhD students: make sure your PI has set up the RDSS project before you start generating data
+- Consider filename conventions, experimental metadata (description in readme.txt files) and good research data management practices
+- If you arent sure, you can always as a data steward
 
 **Project Setup/Structure**
 - *Nick* to add something here.
@@ -81,10 +85,10 @@ flowchart TD
 ---
 
 ### RDR — UCL Research Data Repository
-**Use when:** a project is ending or a paper is being submitted and there is no domain-specific repository available.
+**Use when:** a project is ending or a paper is being submitted and there is no domain-specific repository available. *Check the resource https://fairsharing.org/ for potential respositories for your data type
 
 **Key facts:**
-- Data is **publicly accessible** and assigned a DOI — treat it as permanent publication
+- Data is **publicly accessible** and assigned a DOI — treat it as permanent identifier
 - 50GB per-person upload limit by default; contact [researchdata-support@ucl.ac.uk](mailto:researchdata-support@ucl.ac.uk) to increase
 - Discipline-specific repositories (GEO, ENA, ArrayExpress, Zenodo, etc.) should be considered first where they exist — they're more discoverable by your community
 
@@ -94,6 +98,7 @@ flowchart TD
 
 **Tips:**
 - Check your funder's preferred repository before depositing (UKRI often accepts Zenodo; Wellcome prefers specific repos for certain data types)
+- Check your Data Management Plan (DMP) with your grant for repository information
 - Deposit raw data, not just processed outputs — reviewers and future researchers will thank you
 - Identify the appropriate metadata and submit as much as possible
 
@@ -109,7 +114,7 @@ flowchart TD
 
 **Gotchas:**
 - Do not store sensitive data on RDSS, OneDrive, or S Drive, even temporarily
-- Getting a project approved can take weeks — factor this into project timelines
+- Getting a TRE/DSH project approved can take weeks — factor this into project timelines
 
 ---
 
@@ -128,6 +133,7 @@ flowchart TD
 - 100GB per user via UCL's Microsoft 365 subscription
 - Easy external sharing, works across devices
 - Not appropriate for primary research data storage — think of it as a working/collaboration layer
+- If you have research data on OneDrive please move it to an RDSS project
 
 ---
 
