@@ -12,13 +12,15 @@
 
 | You want to… | Approach |
 |---|---|
-| Give a collaborator ongoing access to a folder that stays in sync | Share access to RDSS |
+| Give a collaborator ongoing access to a folder that stays in sync | Share access to an RDSS project - consider requesting a project space just for collaborative sharing |
 | Send a snapshot of files as they are now | Export/download and share a static file or archive (zip/tar) |
 | Make data permanently citable and public | Deposit to RDR or a domain repository — files are frozen at deposit. A DOI can be generated and point to a specific version of the data |
 
 **2. How sensitive is the data?**
 
 If data contains anything identifiable — patient records, linked administrative data, personal information — stop and contact ISD or ARC before doing anything else. The DSH/TRE is the only appropriate route. Do not use RDSS, OneDrive, Globus, or any link-sharing method for this data.
+
+If you are using data on an NHS network do not email or copy the data to a UCL platform as this will break the governance. The only expection would be direct to the TRE/DSH
 
 For all other data, continue below.
 
@@ -88,7 +90,7 @@ External collaborators need either a UCL guest account or an institutional accou
 
 ### File size
 
-File size affects which method is practical rather than which is permitted. For small files, email attachments or OneDrive links are fine. As files get larger — multi-GB datasets, image stacks, sequencing outputs — browser-based uploads become unreliable and slow, and a dropped connection means starting again. At this scale RDSS links are more robust, and for anything in the tens of gigabytes or above, Globus is strongly preferable: it handles interruptions, can be left to run overnight, and verifies integrity automatically. There is no hard upper limit on Globus transfers, but very large transfers (hundreds of GB or more) are worth discussing with ARC (researchdata-support@ucl.ac.uk) beforehand.
+File size affects which method is practical rather than which is permitted. For small files, email attachments or OneDrive links are fine. As files get larger — multi-GB datasets, image stacks, sequencing outputs — browser-based uploads become unreliable and slow, and a dropped connection means starting again. At this scale RDSS links are more robust, and for anything in the tens of gigabytes or above, Globus is strongly preferable: it handles interruptions, can be left to run overnight, and verifies integrity automatically. There is no hard upper limit on Globus transfers, but very large transfers (hundreds of GB or more) are worth discussing with ARC (researchdata-support@ucl.ac.uk) beforehand. Ensure any transfer includes `checksums` of files before and after to ensure validity.
 
 ### Upload speed and reliability
 
@@ -113,7 +115,7 @@ If you are managing a project or setting up external access remotely, connect to
 
 Myriad scratch is not backed up and subject to limits — do not leave data there waiting to be transferred. When a job completes:
 
-1. Move outputs to **RDSS** promptly via `rsync` or the file manager
+1. Move outputs to **RDSS** promptly via `rsync` or the file manager - consider using a `job` with validation checks to ensure correct data migration. Rsync/RClone will allow you to repeat the process updating only those file contents changed.
 2. For large datasets going to an external collaborator, stage on RDSS then use **Globus** to transfer
 3. Scratch is temporary storage only
 
