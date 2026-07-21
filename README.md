@@ -24,15 +24,15 @@ The Data Science team helps researchers plan, run, and maintain computational an
 UCL has a Slack workspace for computational questions — [join here](https://ucl-programming-hub.slack.com/).
 
 ## Drop-ins
+
+**Drop-ins are paused for the 2026 summer break - see you in October!**
+
 Come along to the Darwin Common Room for a drop-in with Biosciences Data Scientist James Gilbert. We can discuss any questions you have about your data, code, or analyses. No appointment needed! 
 
 <!-- NEXT_EVENTS_START -->
-- **Tue, 21 Jul 2026** — 10:00-11:00 — Darwin Common Room — Data Science Drop-Ins
-- **Tue, 4 Aug 2026** — 10:00-11:00 — Darwin Common Room — Data Science Drop-Ins
-- **Tue, 18 Aug 2026** — 10:00-11:00 — Darwin Common Room — Data Science Drop-Ins
 <!-- NEXT_EVENTS_END -->
 
-We are also running **bioimage analysis drop-ins** every other Tuesday! More info on computational support and training is available [here](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/blob/main/UCL_comp_guides/training_and_support_comp_at_UCL.md).
+<!-- We are also running **bioimage analysis drop-ins** every other Tuesday! More info on computational support and training is available [here](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/blob/main/UCL_comp_guides/training_and_support_comp_at_UCL.md). -->
 
 ## Events
 The table below lists upcoming and recent events. It is automatically generated from individual event files in the `events/` folder. To add an event follow the instructions in `events/add-an-event.md`. A GitHub Action will update this table automatically.
