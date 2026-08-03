@@ -74,3 +74,6 @@ Bioinformatics: There are a lot of great resources across UCL and beyond:
 - [The Proteomics Research Translational Technology Platform](https://www.ucl.ac.uk/medical-sciences/divisions/cancer/translational-technology-platforms/proteomics-research-translational-technology-platform) for all things relating to proteomics analysis.
 - [UCL's Imaging STP](https://www.ucl.ac.uk/science-technology-platforms/imaging) covers a huge range of imaging-related instruments, expertise, and training.
 
+Support technicians by recognising their contributions to research! [Here](https://www.ucl.ac.uk/human-resources/sites/human_resources/files/ucl-fairattributionguideline-final-jan25-7jul25.pdf) is some information about fair attribution in papers and funding.
+
+
