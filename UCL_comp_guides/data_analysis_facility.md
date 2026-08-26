@@ -104,4 +104,4 @@ SAMPLE2,/path/to/S2_R1.fastq.gz,/path/to/S2_R2.fastq.gz,
 
 ## Requesting a new pipeline
 
-If you need a pipeline not listed above, [fill in the new pipeline request form](LINK_TO_FORM). We'll assess feasibility and add it to our roadmap where possible.
+If you need a pipeline not listed above, [fill in the new pipeline request form](https://forms.cloud.microsoft/e/i1wZabqP1i). We'll assess feasibility and add it to our roadmap where possible.
