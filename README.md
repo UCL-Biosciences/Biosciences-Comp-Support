@@ -26,6 +26,8 @@ UCL has a Slack workspace for computational questions — [join here](https://uc
 ## Data Processing and Analysis
 We can process and analyse some datasets for you. Fully reproducible and completely free.
 
+_Coming October 2026!!_
+
 ### Available pipelines
 We can run nf-core pipelines on your data. These are gold-standard, automated, reproducible analysis pipelines maintained by the bioinformatics community. You provide the data, a samplesheet and some additional info then we run the pipeline and return the results.
 
@@ -35,7 +37,7 @@ We can run nf-core pipelines on your data. These are gold-standard, automated, r
 | [nf-core/sarek](https://nf-co.re/sarek) | Germline and somatic variant calling (WGS/WES) | Available |
 | [nf-core/methylseq](https://nf-co.re/methylseq) | Bisulfite / TAPS methylation sequencing | Available |
 
-More pipelines are being added — if you need one not listed here, [request it here](ADD LINK).
+More pipelines are being added — if you need one not listed here, [request it here](https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?origin=NeoPortalPage&subpage=design&id=_oivH5ipW0yTySEKEdmlwg_hK73jbqFEhFXKM36BElNUMVkxVlZFNzI4RlNSQUpDRTVGMkE1WlUwQi4u).
 
 ### How it works
 
