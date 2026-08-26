@@ -1,6 +1,6 @@
 # Nextflow Pipeline Request Guide
 
-This guide explains what you need to prepare before submitting a pipeline request. Please read the relevant section for your pipeline, then [submit your request](LINK_TO_FORM).
+This guide explains what you need to prepare before submitting a pipeline request. Please read the relevant section for your pipeline, then [submit your request](https://forms.cloud.microsoft/e/P5guQdhnjR).
 
 ## Before you request
 
