@@ -35,12 +35,12 @@ We can run nf-core pipelines on your data. These are gold-standard, automated, r
 | [nf-core/sarek](https://nf-co.re/sarek) | Germline and somatic variant calling (WGS/WES) | Available |
 | [nf-core/methylseq](https://nf-co.re/methylseq) | Bisulfite / TAPS methylation sequencing | Available |
 
-More pipelines are being added — if you need one not listed here, [request it here](LINK_TO_FORM).
+More pipelines are being added — if you need one not listed here, [request it here](ADD LINK).
 
 ### How it works
 
 1. You read the documentation for the pipeline you need (links above)
-2. [Submit a request](LINK_TO_FORM) with your samplesheet and data location
+2. [Submit a request](https://forms.cloud.microsoft/e/P5guQdhnjR) with your samplesheet and data location
 3. We review, request more info if needed, run the pipeline, and share results to your RDSS project
 
 Full details on what to prepare for each pipeline: [pipeline request guide](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/blob/main/UCL_comp_guides/data_analysis_facility.md).
