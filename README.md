@@ -43,7 +43,7 @@ More pipelines are being added — if you need one not listed here, [request it 
 2. [Submit a request](LINK_TO_FORM) with your samplesheet and data location
 3. We review, request more info if needed, run the pipeline, and share results to your RDSS project
 
-Full details on what to prepare for each pipeline: [pipeline request guide](LINK_TO_GUIDE).
+Full details on what to prepare for each pipeline: [pipeline request guide](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/blob/main/UCL_comp_guides/data_analysis_facility.md).
 
 ### Scope and expectations
 - Pipelines are run with **available nf-core parameters and outputs** — we don't have capacity for bespoke downstream analysis on every project.
