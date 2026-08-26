@@ -37,7 +37,7 @@ We can run nf-core pipelines on your data. These are gold-standard, automated, r
 | [nf-core/sarek](https://nf-co.re/sarek) | Germline and somatic variant calling (WGS/WES) | Available |
 | [nf-core/methylseq](https://nf-co.re/methylseq) | Bisulfite / TAPS methylation sequencing | Available |
 
-More pipelines are being added — if you need one not listed here, [request it here](https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?origin=NeoPortalPage&subpage=design&id=_oivH5ipW0yTySEKEdmlwg_hK73jbqFEhFXKM36BElNUMVkxVlZFNzI4RlNSQUpDRTVGMkE1WlUwQi4u).
+More pipelines are being added — if you need one not listed here, [request it here](https://forms.cloud.microsoft/e/i1wZabqP1i).
 
 ### How it works
 
