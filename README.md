@@ -33,26 +33,7 @@ Come along to the Darwin Common Room for a drop-in with Biosciences Data Scienti
 <!-- NEXT_EVENTS_END -->
 
 <!-- We are also running **bioimage analysis drop-ins** every other Tuesday! More info on computational support and training is available [here](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/blob/main/UCL_comp_guides/training_and_support_comp_at_UCL.md). -->
-
-## Events
-The table below lists upcoming and recent events. It is automatically generated from individual event files in the `events/` folder. To add an event follow the instructions in `events/add-an-event.md`. A GitHub Action will update this table automatically.
-
-<!-- EVENTS:START -->
-
-### Upcoming
-
-| Date | Title | Location | Description | Link |
-|------|-------|----------|-------------|------|
-| – | – | – | – | – |
-
-### Recent Past (last 90 days)
-
-| Date | Title | Location | Description | Link |
-|------|-------|----------|-------------|------|
-| – | – | – | – | – |
-
-<!-- EVENTS:END -->
-
+ 
 ## How do I contribute?
 Want to request more information about a specific topic or type of support? We welcome general requests, questions, or ideas (e.g. training needs, new tools, or pipeline improvements) - please open an [issue in the computational support repository](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/issues). This provides a single point for tracking and coordinating work across projects.
 
