@@ -52,6 +52,8 @@ Full details on what to prepare for each pipeline: [pipeline request guide](http
 - Results are shared and **deleted after 30 days** — we do not provide long-term storage.
 - Turnaround depends on queue and complexity; we'll confirm timelines when we accept your request.
 - Requests must be submitted by PIs.
+- We **cannot process sensitive or identifiable data** (e.g. patient records). This data must be handled through UCL's Data Safe Haven / TRE.
+
 
 ## Drop-ins
 
