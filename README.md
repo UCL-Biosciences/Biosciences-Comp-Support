@@ -18,10 +18,40 @@ The Data Science team helps researchers plan, run, and maintain computational an
 | [Auto-Prot](https://github.com/UCL-Biosciences/Auto-Prot) | Pipeline for automated mass spec proteomics analysis |
 | [Computational Training 2025](https://github.com/UCL-Biosciences/2025_Biosciences_Computational_Training_Material) | Materials from our annual training series for biologists |
 | Image Analysis | [Fortnightly drop-ins](https://www.uclccmd.co.uk/drop-in) (Darwin Common Room, 10:30–11:30) supporting reproducible image analysis with Python. Contact: biosciences.imaging@ucl.ac.uk |
-| nextflow/nf-core | Support for automated, reproducible pipelines including [nf-core/rnaseq](https://nf-co.re/rnaseq). |
+| nextflow/nf-core | Support for automated, reproducible nextflow pipelines. |
 | [UCL Comp Guides](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/tree/main/UCL_comp_guides) | Guides for navigating UCL's computational resources including data storage, sharing and using HPCs |
 
 UCL has a Slack workspace for computational questions — [join here](https://ucl-programming-hub.slack.com/).
+
+## Data Processing and Analysis
+We can process and analyse some datasets for you. Fully reproducible and completely free.
+
+### Available pipelines
+We can run nf-core pipelines on your data. These are gold-standard, automated, reproducible analysis pipelines maintained by the bioinformatics community. You provide the data, a samplesheet and some additional info, then we run the pipeline and return the results.
+
+| Pipeline | Application | Status |
+|---|---|---|
+| [nf-core/rnaseq](https://nf-co.re/rnaseq) | Bulk RNA-seq quantification and QC | Available |
+| [nf-core/sarek](https://nf-co.re/sarek) | Germline and somatic variant calling (WGS/WES) | Available |
+| [nf-core/methylseq](https://nf-co.re/methylseq) | Bisulfite / TAPS methylation sequencing | Available |
+
+More pipelines are being added — if you need one not listed here, [request it here](LINK_TO_FORM).
+
+### How it works
+
+1. You read the documentation for the pipeline you need (links above)
+2. [Submit a request](LINK_TO_FORM) with your samplesheet and data location
+3. We review, request more info if needed, run the pipeline, and share results to your RDSS project
+
+Full details on what to prepare for each pipeline: [pipeline request guide](LINK_TO_GUIDE).
+
+### Scope and expectations
+- Pipelines are run with **available nf-core parameters and outputs** — we don't have capacity for bespoke downstream analysis on every project.
+- We are always happy to discuss the pipelines but researchers are equally responsible for understanding the pipeline, its requirements, and its outputs.
+- Data must be on RDSS with a confirmed location for receiving results.
+- Results are shared and **deleted after 30 days** — we do not provide long-term storage.
+- Turnaround depends on queue and complexity; we'll confirm timelines when we accept your request.
+- Requests must be submitted by PIs.
 
 ## Drop-ins
 
