@@ -27,7 +27,7 @@ UCL has a Slack workspace for computational questions — [join here](https://uc
 We can process and analyse some datasets for you. Fully reproducible and completely free.
 
 ### Available pipelines
-We can run nf-core pipelines on your data. These are gold-standard, automated, reproducible analysis pipelines maintained by the bioinformatics community. You provide the data, a samplesheet and some additional info, then we run the pipeline and return the results.
+We can run nf-core pipelines on your data. These are gold-standard, automated, reproducible analysis pipelines maintained by the bioinformatics community. You provide the data, a samplesheet and some additional info then we run the pipeline and return the results.
 
 | Pipeline | Application | Status |
 |---|---|---|
