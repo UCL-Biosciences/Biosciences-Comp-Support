@@ -24,37 +24,8 @@ The Data Science team helps researchers plan, run, and maintain computational an
 UCL has a Slack workspace for computational questions — [join here](https://ucl-programming-hub.slack.com/).
 
 ## Data Processing and Analysis
-We can process and analyse some datasets for you. Fully reproducible and completely free.
 
 _Coming October 2026!!_
-
-### Available pipelines
-We can run nf-core pipelines on your data. These are gold-standard, automated, reproducible analysis pipelines maintained by the bioinformatics community. You provide the data, a samplesheet and some additional info then we run the pipeline and return the results.
-
-| Pipeline | Application | Status |
-|---|---|---|
-| [nf-core/rnaseq](https://nf-co.re/rnaseq) | Bulk RNA-seq quantification and QC | Available |
-| [nf-core/sarek](https://nf-co.re/sarek) | Germline and somatic variant calling (WGS/WES) | Available |
-| [nf-core/methylseq](https://nf-co.re/methylseq) | Bisulfite / TAPS methylation sequencing | Available |
-
-More pipelines are being added — if you need one not listed here, [request it here](https://forms.cloud.microsoft/e/i1wZabqP1i).
-
-### How it works
-
-1. You read the documentation for the pipeline you need (links above)
-2. [Submit a request](https://forms.cloud.microsoft/e/P5guQdhnjR) with your samplesheet and data location
-3. We review, request more info if needed, run the pipeline, and share results to your RDSS project
-
-Full details on what to prepare for each pipeline: [pipeline request guide](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/blob/main/UCL_comp_guides/data_analysis_facility.md).
-
-### Scope and expectations
-- Pipelines are run with **available nf-core parameters and outputs** — we don't have capacity for bespoke downstream analysis on every project.
-- We are always happy to discuss the pipelines but researchers are equally responsible for understanding the pipeline, its requirements, and its outputs.
-- Data must be on RDSS with a confirmed location for receiving results.
-- Results are shared and **deleted after 30 days** — we do not provide long-term storage.
-- Turnaround depends on queue and complexity; we'll confirm timelines when we accept your request.
-- This service is available to Biosciences researchers only. Requests must be submitted by PIs.
-- We **cannot process sensitive or identifiable data** (e.g. patient records). This data must be handled through UCL's Data Safe Haven / TRE.
 
 
 ## Drop-ins
