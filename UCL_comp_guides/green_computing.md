@@ -1,5 +1,7 @@
 # Green Computing
 
+_This is a draft. More info with respect to Green Compute and Green Disc applications to come early 2027_
+
 ## Why it matters
 
 Digital research has a real carbon footprint — but most of the steps that reduce it also make your group's work faster, cheaper, and easier to reproduce. This isn't about extra overhead; it's mostly good research practice reframed.
