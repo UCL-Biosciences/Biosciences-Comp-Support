@@ -41,6 +41,7 @@ UCL's Advanced Research Computing centre offers training covering HPC, software 
 ### Others at UCL
 
 - **Doctoral School** — training for PhD students covering research skills, including computational sessions. See the [Doctoral School training pages](https://www.ucl.ac.uk/study/doctoral-school/development).
+- **Digital Skills Development** - training for staff and students covering a range of digital skills.
 
 ---
 
