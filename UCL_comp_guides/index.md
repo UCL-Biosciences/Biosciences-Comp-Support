@@ -15,7 +15,7 @@ Guides for navigating UCL's computational resources, from the Biosciences Data S
 {% endfor %}
 
 ## Contributions
-These guides are aimed at being practical summaries that help with your day-to-day computational lives. We would love for them to be a shared living resource and welcome suggestions and changes from all users. Please see the [contributions](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/tree/main#how-do-i-contribute) section for instructions on contributing to any info in this repository.
+These guides are  practical summaries that help with day-to-day computational lives. We hope they will be a shared living resource and welcome suggestions and changes from all users. Please see the [contributions](https://github.com/UCL-Biosciences/Biosciences-Comp-Support/tree/main#how-do-i-contribute) section for instructions on contributing to any info in this repository.
 
 ## Get in touch
 
