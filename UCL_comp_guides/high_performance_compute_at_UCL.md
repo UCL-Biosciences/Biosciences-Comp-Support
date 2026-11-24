@@ -191,6 +191,12 @@ apptainer exec myimage.sif mycommand
 ```
 
 ---
+## GPUs
+UCL is increasing GPU capacity to try to keep up with rapidly increasing demand. Biosciences researchers using UCL infrastructure will likely use GPUs from one of these platforms:
+- **Computer Science HPC**. *CS TO ADD*
+- **[Unified AI](https://www.ucl.ac.uk/research-innovation/advanced-research-computing/platforms-and-services/unified-ai-platform-research)**. Scalable, GPU-accelerated infrastructure enabling UCL researchers to develop, train, evaluate, and deploy AI and machine learning models. Free tier for lightweight use, paid tier for priority access and extended capability. 
+- **[Condenser](https://condenser.arc.ucl.ac.uk/)**. Condenser is a private cloud platform for UCL based on traditional High-Performance Computing (HPC) hardware. GPUs are available following same costing model as UAI.
+- **Myriad**. Myriad has a number of [GPU nodes](https://www.rc.ucl.ac.uk/docs/Clusters/Myriad/#gpus) available for free. These are open to all UCL researchers and demand can be high.
 
 ## When HPC isn't the answer
 
